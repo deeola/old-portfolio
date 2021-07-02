@@ -118,7 +118,7 @@
               justify-content: space-between;
               flex-direction: column;
               width: 80px;
-              padding-top: 6px;
+              padding-top: 0px;
   
               a {
                 text-decoration: none;
@@ -126,6 +126,14 @@
                 i {
                   font-size: 25px;
                 }
+              }
+
+              .icon-line{
+                  content: '';
+                  width: 2px;
+                  height: 40px;
+                  background-color: #f58f29;
+                  margin-left: 11px;
               }
             }
   

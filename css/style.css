@@ -483,7 +483,7 @@ header .hero .hero-container .hero-bottom .hero-bottom-right .lang-menu:hover ul
     justify-content: space-between;
     flex-direction: column;
     width: 80px;
-    padding-top: 6px;
+    padding-top: 0px;
   }
   header .hero .hero-container .hero-bottom .hero-icons a {
     text-decoration: none;
@@ -491,6 +491,13 @@ header .hero .hero-container .hero-bottom .hero-bottom-right .lang-menu:hover ul
   }
   header .hero .hero-container .hero-bottom .hero-icons a i {
     font-size: 25px;
+  }
+  header .hero .hero-container .hero-bottom .hero-icons .icon-line {
+    content: '';
+    width: 2px;
+    height: 40px;
+    background-color: #f58f29;
+    margin-left: 11px;
   }
   header .hero .hero-container .hero-bottom .hero-bottom-right {
     width: 60%;
