@@ -657,4 +657,81 @@ main .projects .project-control .project-link-mobile a {
     right: 0px;
     left: unset;
   }
+  /*MAIN SESSION*/
+  main .projects {
+    margin-top: 40px;
+  }
+  main .projects .project-control {
+    width: 90%;
+    margin: 15px auto 50px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .projects .project-control::before {
+    background-color: rgba(243, 242, 242, 0.349);
+    width: 80%;
+    height: 90%;
+    bottom: 0;
+    left: unset;
+    right: 0;
+  }
+  main .projects .project-control .project-image-section {
+    margin-bottom: 10px;
+    width: 50%;
+  }
+  main .projects .project-control .project-image-section .project-image {
+    margin-bottom: 2px;
+  }
+  main .projects .project-control .project-image-section .project-link-desktop {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  main .projects .project-control .project-image-section .project-link-desktop a {
+    width: 48%;
+    text-align: center;
+    margin: auto auto 10px auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #f58f29;
+    padding: 8px 0px;
+    color: #f58f29;
+    font-size: 12px;
+  }
+  main .projects .project-control .project-image-section .project-link-desktop a:hover {
+    background-color: #f58f29;
+    outline: none;
+    color: white;
+  }
+  main .projects .project-control .left-control {
+    order: 2;
+  }
+  main .projects .project-control .project-text-section {
+    width: 40%;
+  }
+  main .projects .project-control .project-text-section h3 {
+    text-align: left;
+  }
+  main .projects .project-control .project-text-section p {
+    font-size: .9rem;
+  }
+  main .projects .project-control .project-text-section .project-second-para {
+    margin-top: 10px;
+  }
+  main .projects .project-control .project-link-mobile {
+    display: none;
+  }
+  main .projects .archstudio::before, main .projects .sunnyside::before {
+    left: 0;
+    right: unset;
+  }
+  main .projects .audiophile {
+    margin-top: 40px;
+  }
 }

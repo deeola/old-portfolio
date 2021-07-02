@@ -184,5 +184,126 @@
         }
       }
     }
+
+    /*MAIN SESSION*/
+    main {
+
+        //PORTFOLIO
+        .projects {
+          margin-top: 40px;
+        //   .Project-heading {
+        //     background-color: $deep-green;
+        //     width: 60%;
+        //     padding: 10px 10px 10px 0px;
+        //     background-color: #293d3928;
+      
+        //     h2 {
+        //       width: 90%;
+        //       margin: auto;
+        //       color: $black;
+        //       font-size: 30px;
+        //     }
+        //     p {
+              
+              
+        //     }
+        //   }
+      
+          .project-control {
+            width: 90%;
+            margin: 15px auto 50px auto;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+      
+            &::before {
+              background-color: rgba(243, 242, 242, 0.349);
+              width: 80%;
+              height: 90%;
+              bottom: 0;
+              left: unset;
+              right: 0;
+              
+            }
+      
+            .project-image-section {
+              margin-bottom: 10px;
+              width: 50%;
+              .project-image {
+                margin-bottom: 2px;
+              }
+      
+              .project-link-desktop {
+
+                display: flex;
+                flex-direction: row;
+                margin-top: 20px;
+                width: 100%;
+                margin: auto;
+                justify-content: space-between;
+                margin-top: 20px;
+                a {
+                    width: 48%;
+                    text-align: center;
+                    margin: auto auto 10px auto;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    border: 2px solid $orange-color;
+                    padding: 8px 0px;
+                    color: $orange-color;
+                    font-size: 12px;
+
+                    &:hover {
+                        background-color: $orange-color;
+                        outline: none;
+                        color: $white;
+                      }
+                }
+              }
+            }
+
+            .left-control{
+                order: 2;
+
+                
+            }
+      
+            .project-text-section {
+              //    text-align: center;
+              width: 40%;
+              h3 {
+                
+                text-align: left;
+              }
+              p {
+                font-size: .9rem;
+                
+              }
+              .project-second-para {
+                margin-top: 10px;
+              }
+            }
+      
+            .project-link-mobile {
+              display: none;
+            }
+          }
+
+          .archstudio, .sunnyside{
+            &::before {
+                
+                left: 0;
+                right: unset;
+                
+              }
+            
+          }
+
+          .audiophile{
+              margin-top: 40px;
+          }
+        }
+      }
   }
   
