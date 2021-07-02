@@ -360,6 +360,7 @@ main .projects .project-control .project-image-section .project-link-desktop {
 main .projects .project-control .project-text-section h3 {
   color: #293D39;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 main .projects .project-control .project-text-section p {
