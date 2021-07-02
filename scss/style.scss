@@ -2,6 +2,8 @@
 @import "utilities";
 
 /*Header styling*/
+
+
 header {
   background-image: url(../assets/header-image.jpg);
   background-position: center;
@@ -43,7 +45,7 @@ header {
       justify-content: space-around;
       align-items: center;
       position: absolute;
-      background-color: #f58f29;
+      background-color: $orange-color;
       width: 100%;
       height: 200px;
       top: 3rem;
@@ -54,7 +56,7 @@ header {
         list-style: none;
         a {
           text-decoration: none;
-          color: white;
+          color: $white;
           text-transform: uppercase;
         }
       }
@@ -88,7 +90,7 @@ header {
           .hello-line {
             width: 30%;
             height: 2px;
-            background-color: #f58f29;
+            background-color: $orange-color;
             content: "";
             margin-right: 5px;
           }
@@ -131,7 +133,7 @@ header {
           .recent-download {
             width: 200px;
             margin: 20px 0px;
-            border: 2px solid #f58f29;
+            border: 2px solid $orange-color;
             padding: 10px 5px;
             display: flex;
             flex-direction: column;
@@ -141,20 +143,20 @@ header {
             transition: 300ms ease-in;
 
             a {
-              color: #f58f29;
+              color: $orange-color;
               text-transform: capitalize;
               text-decoration: none;
               font-size: 14px;
             }
 
             &:hover {
-              background-color: #f58f29;
+              background-color: $orange-color;
               
               outline: none;
               
 
               a {
-                color: white;
+                color: $white;
               }
             }
           }
@@ -225,7 +227,7 @@ header {
             ul {
               margin: 0;
               padding: 0;
-              background-color: white;
+              background-color: $white;
               border: 1px solid #f8f8f8;
               box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
               border-radius: 5px;
@@ -252,7 +254,7 @@ header {
                   display: block;
                   padding: 5px 10px;
                   text-decoration: none;
-                  color: black;
+                  color: $black;
                   font-size: 12px;
 
                   &:before {
@@ -266,7 +268,7 @@ header {
                   }
 
                   &:hover {
-                    background-color: #f2f2f2;
+                    background-color: $semi-white;
                   }
                 }
               }
@@ -289,6 +291,112 @@ header {
       }
     }
   }
+}
+
+/*MAIN STYLING*/
+
+main{
+
+    //PORTFOLIO
+   .projects{
+       width: 100%;
+       margin-top: 10px;
+      
+
+       .Project-heading{
+           background-color:$deep-green;
+           width: 60%;
+           padding: 10px 10px 10px 0px;
+           background-color: #293d3928;
+
+           h2{
+               width: 90%;
+               margin: auto;
+               color: $black;
+               font-size: 30px;
+
+           }
+           p{
+               font-size: 14px;
+               display: none
+               
+           }
+       }
+
+       .project-control{
+           width: 90%;
+           margin: 15px auto 30px auto;
+           position: relative;
+          
+           &::before{
+               background-color: rgba(243, 242, 242, 0.233);
+               width: 100%;
+               height: 80%;
+               content: '';
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               z-index: -1;
+               
+
+           }
+
+           .project-image-section{
+               margin-bottom: 10px;
+               .project-image{
+                   margin-bottom: 2px;
+ 
+               }
+
+               .project-link-desktop{
+                   display: none
+               }
+
+           }
+
+           .project-text-section{
+            //    text-align: center;
+               h3{
+                color: $deep-green;
+                margin-bottom: 10px;
+
+               }
+               p{
+                   font-size: 12px;
+                   width: 100%;
+                   line-height: 1.5;
+                   color: $black;
+                   
+               }
+               .project-second-para{
+                   margin-top: 10px;
+
+               }
+
+           }
+
+           .project-link-mobile{
+               display: flex;
+               flex-direction: column;
+               margin-top: 20px;
+               a{
+                   width: 80%;
+                   text-align: center;
+                   margin: auto auto 10px auto;
+                   text-decoration: none;
+                   text-transform: uppercase;
+                   border: 2px solid $orange-color;
+                   padding: 8px 0px;
+                   color: $orange-color;
+                   font-size: 12px
+                   
+                   
+
+               }
+
+           }
+       }
+   }
 }
 
 

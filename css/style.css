@@ -1,5 +1,6 @@
 /*Colors*/
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700&display=swap");
+/*Font*/
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,11 @@ img {
 
 body {
   color: white;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*Header styling*/
@@ -297,6 +303,94 @@ header .hero .hero-container .hero-bottom .hero-bottom-right .lang-menu:hover ul
   /* position: relative; */
 }
 
+/*MAIN STYLING*/
+main .projects {
+  width: 100%;
+  margin-top: 10px;
+}
+
+main .projects .Project-heading {
+  background-color: #293D39;
+  width: 60%;
+  padding: 10px 10px 10px 0px;
+  background-color: #293d3928;
+}
+
+main .projects .Project-heading h2 {
+  width: 90%;
+  margin: auto;
+  color: black;
+  font-size: 30px;
+}
+
+main .projects .Project-heading p {
+  font-size: 14px;
+  display: none;
+}
+
+main .projects .project-control {
+  width: 90%;
+  margin: 15px auto 30px auto;
+  position: relative;
+}
+
+main .projects .project-control::before {
+  background-color: rgba(243, 242, 242, 0.233);
+  width: 100%;
+  height: 80%;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+main .projects .project-control .project-image-section {
+  margin-bottom: 10px;
+}
+
+main .projects .project-control .project-image-section .project-image {
+  margin-bottom: 2px;
+}
+
+main .projects .project-control .project-image-section .project-link-desktop {
+  display: none;
+}
+
+main .projects .project-control .project-text-section h3 {
+  color: #293D39;
+  margin-bottom: 10px;
+}
+
+main .projects .project-control .project-text-section p {
+  font-size: 12px;
+  width: 100%;
+  line-height: 1.5;
+  color: black;
+}
+
+main .projects .project-control .project-text-section .project-second-para {
+  margin-top: 10px;
+}
+
+main .projects .project-control .project-link-mobile {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+main .projects .project-control .project-link-mobile a {
+  width: 80%;
+  text-align: center;
+  margin: auto auto 10px auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #f58f29;
+  padding: 8px 0px;
+  color: #f58f29;
+  font-size: 12px;
+}
+
 /*MEDIA QUERY FOR TABLET*/
 @media (min-width: 768px) {
   header::after {
@@ -454,11 +548,13 @@ header .hero .hero-container .hero-bottom .hero-bottom-right .lang-menu:hover ul
   header .hero .hero-container .hero-top .name-container .my-name {
     font-size: 76px;
     width: 700px;
+    margin-bottom: 10px;
   }
   header .hero .hero-container .hero-top .name-container .hero-sub-title {
     font-size: 1.2rem;
     width: 700px;
     padding-left: 140px;
+    margin-bottom: 20px;
   }
   header .hero .hero-container .hero-top .hero-button-container {
     width: 560px;

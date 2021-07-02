@@ -13,16 +13,17 @@
     <script src="https://kit.fontawesome.com/2736c38521.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <!--HEADER-->
+    <header id="header">
         <nav>
             <div class="logo" id="logo">
                 <img src="./assets/logo.png" alt="logo">
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a id="home" href="#header">Home</a></li>
+                <li><a id="project" href="#projects">Projects</a></li>
+                <li><a id="about" href="#">About</a></li>
+                <li><a id="contact" href="#">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <img class="open-menu" id="open-menu" src="./assets/icons/ham-open.svg" alt="open-menu">
@@ -85,7 +86,142 @@
             </div>
         </div>
     </header>
+    <!--Main-->
     <main>
+        <section class="projects" id="projects">
+            <div class="Project-heading">
+                <h2>PROJECTS</h2>
+                <p>Here are some of my projects</p>
+            </div>
+            <div class="audiophile project-control">
+                <div class="project-image-section">
+                    <div class="project-image">
+                        <img src="./assets/audiophile.png" alt="audiophile-mockup">
+                    </div>
+                    <div class="desktop project-link-desktop">
+                        <a href="#">View Repo</a>
+                        <a href="#">Live Site</a>
+                    </div>
+                </div>
+                <div class="project-text-section">
+                    <h3>Audiophile</h3>
+                    <p>Audiophile is an e-commerce website. It is a frontend mentor
+                        guru challenge.  Users are able to add/remove items from 
+                        cart. Edit product quantities in cart, receive form validations 
+                        if fields are missed or incorrect during checkout and ee an order
+                        confirmation modal after checking out with an order summary.                        
+                    </p>
+                    <p class="project-second-para">
+                        Made using REACT, REACT Hooks and styled using SASS.For state
+                        management, useContext API was used and data was fetched from a json 
+                        file.
+                    </p>
+                </div>
+                <div class="mobile project-link-mobile">
+                    <a href="#">View Repo</a>
+                    <a href="#">Live Site</a>
+                </div>
+
+
+            </div>
+            <div class="archstudio project-control">
+                <div class="project-image-section">
+                    
+                    <div class="project-image">
+                        <img src="./assets/archstudio.png" alt="archstudio-mockup">
+                    </div>
+                    <div class="desktop project-link-desktop">
+                        <a href="#">View Repo</a>
+                        <a href="#">Live Site</a>
+                    </div>
+                </div>
+                <div class="project-text-section">
+                    <h3>Archstudio</h3>
+                    <p>Archstudio is a multi-page website i created. Users are able to
+                        view  optimal layout for each page depending on their device's 
+                        screen sizes and also view actual locations on the contact page
+                        map.                
+                    </p>
+                    <p class="project-second-para">
+                        I created this site with  REACT, SASS and the state was managed
+                        with useContext API and Google Map API.
+                    </p>
+                </div>
+                <div class="mobile project-link-mobile">
+                    <a href="#">View Repo</a>
+                    <a href="#">Live Site</a>
+                </div>
+
+
+            </div>
+            <div class="heritagex project-control">
+                <div class="project-image-section">
+                    <div class="project-image">
+                        <img src="./assets/heritage.png" alt="heritage-mockup">
+                    </div>
+                    
+                    <div class="desktop project-link-desktop">
+                        <a href="#">View Repo</a>
+                        <a href="#">Live Site</a>
+                    </div>
+                </div>
+                <div class="project-text-section">
+                    <h3>Heritage-X</h3>
+                    <p>This is a cultural heritage website i created to help people
+                        learn more about their unesco heritage sites around the world.
+                        Users can save some of these sites to their visit list or
+                        bucketlist.               
+                    </p>
+                    <p class="project-second-para">
+                        Made using REACT, SASS and GSAP. useContext API was used 
+                        for the state management, data was fetched from a json 
+                        file and Google maps API was used to display geolocations
+                        in sites section. Graphics and layout
+                        designs was  created using figma. 
+                    </p>
+                </div>
+                <div class="mobile project-link-mobile">
+                    <a href="#">View Repo</a>
+                    <a href="#">Live Site</a>
+                </div>
+
+
+            </div>
+            <div class="sunnyside project-control">
+                <div class="project-image-section">
+                    <div class="project-image">
+                        <img src="./assets/sunnyside.png" alt="sunnyside-mockup">
+                    </div>
+                    
+                    <div class="desktop project-link-desktop">
+                        <a href="#">View Repo</a>
+                        <a href="#">Live Site</a>
+                    </div>
+                </div>
+                <div class="project-text-section">
+                    <h3>SunnySide</h3>
+                    <p>This web application looks like your basic html,css and Javascript website 
+                        but it is more than that. It is a Progressive Web Application(PWA)
+                        where users have the option to deustch and english language.
+                        Users are able to view and use this website even without internet
+                        connection. They  can also download this app and add to their 
+                        android home screen on mobile and desktop.     
+                    </p>
+                    <p class="project-second-para">
+                        It was made with HTML, CSS and Vanilla Javascript(ES6). 
+                        Animations on this site were made with GSAP(including the 
+                        smoothscroll plugin).    
+                    </p>
+                </div>
+                <div class="mobile project-link-mobile">
+                    <a href="#">View Repo</a>
+                    <a href="#">Live Site</a>
+                </div>
+
+
+            </div>
+            
+        </section>
 
     </main>
     <footer>
