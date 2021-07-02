@@ -1,7 +1,299 @@
-@import 'utilities';
-@import 'config';
+@import "config";
+@import "utilities";
 
+/*Header styling*/
+header {
+  background-image: url(../assets/header-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 10px;
 
-body{
-    color: $primary-color;
+  &::after {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 41, 41, 0.623);
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  nav {
+    width: 90%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    z-index: 3;
+
+    .logo,
+    .hamburger {
+      width: 30px;
+      cursor: pointer;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      position: absolute;
+      background-color: #f58f29;
+      width: 100%;
+      height: 200px;
+      top: 3rem;
+      left: 0;
+      display: none;
+
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: white;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .hamburger {
+      display: flex;
+      cursor: pointer;
+      .close-menu {
+        display: none;
+      }
+    }
+  }
+
+  .hero {
+    width: 100%;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+    z-index: 2;
+
+    .hero-container {
+      .hero-top {
+        .hello {
+          width: 62%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+
+          .hello-line {
+            width: 30%;
+            height: 2px;
+            background-color: #f58f29;
+            content: "";
+            margin-right: 5px;
+          }
+
+          .helloText {
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 3px;
+            font-size: 14px;
+            width: 100%;
+          }
+        }
+
+        .name-container{
+            width: 90%;
+            margin: auto;
+            .my-name {
+                text-transform: uppercase;
+                font-size: 40px;
+                
+                margin: auto;
+                font-weight: bold;
+              }
+      
+              .hero-sub-title {
+                
+                margin: 5px auto 10px auto;
+                text-transform: capitalize;
+                font-size: 15px;
+              }
+
+        }
+
+        
+
+        .hero-button-container {
+          width: 90%;
+          margin: 30px auto;
+
+          .recent-download {
+            width: 200px;
+            margin: 20px 0px;
+            border: 2px solid #f58f29;
+            padding: 10px 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 300ms ease-in;
+
+            a {
+              color: #f58f29;
+              text-transform: capitalize;
+              text-decoration: none;
+              font-size: 14px;
+            }
+
+            &:hover {
+              background-color: #f58f29;
+              
+              outline: none;
+              
+
+              a {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+
+      .hero-bottom {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .hero-icons {
+          display: none;
+        }
+
+        .hero-bottom-right {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+
+          .scroll-icon {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+
+            p {
+              margin: 10px 0px 10px 0px;
+              font-size: 12px;
+            }
+
+            i {
+              font-size: 20px;
+              margin-bottom: 10px;
+            }
+          }
+
+          .lang-menu {
+            display: block;
+            position: relative;
+            width: 100%;
+            // height: 15%;
+            .selected-lang {
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              width: 100%;
+              vertical-align: middle;
+              cursor: pointer;
+              
+
+              img {
+                width: 20px;
+                height: 20px;
+                margin: 5px;
+              }
+              .selectedlang {
+                font-size: 14px;
+               margin-top: 2px;
+              }
+            }
+
+            ul {
+              margin: 0;
+              padding: 0;
+              background-color: white;
+              border: 1px solid #f8f8f8;
+              box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+              border-radius: 5px;
+              position: absolute;
+              top: 30px;
+              left: 0px;
+              height: 100px;
+              width: 150px;
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              display: none;
+              // opacity: 0;
+              transition: 1s;
+
+              li {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a {
+                  width: 140px;
+                  display: block;
+                  padding: 5px 10px;
+                  text-decoration: none;
+                  color: black;
+                  font-size: 12px;
+
+                  &:before {
+                    content: "";
+                    /* display: block; */
+                    width: 32px;
+                    height: 32px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                  }
+
+                  &:hover {
+                    background-color: #f2f2f2;
+                  }
+                }
+              }
+
+              .de:before {
+                background-image: url("https://www.countryflags.io/de/flat/32.png");
+              }
+
+              .en:before {
+                background-image: url("https://www.countryflags.io/us/flat/32.png");
+              }
+            }
+
+            &:hover ul {
+              display: block;
+              /* position: relative; */
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
+
+
+/*MEDIA QUERY FOR TABLET*/
+
+
+@import 'tablet';

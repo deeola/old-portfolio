@@ -9,6 +9,8 @@
     <meta name="Adeola" content="Adeola Bamigboye">
     <meta name="portfolio" content="personal web portfolio">
     <link rel="stylesheet" href="./css/style.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/2736c38521.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -29,17 +31,56 @@
         </nav>
         <div id="hero" class="hero">
             <div class="hero-container">
-                <div class="hello">
-                    <div class="hello-line"></div>
-                    <p id="hello" class="hello">Hello there !</p>
+                <div class="hero-top">
+                    <div class="hello">
+                        <div class="hello-line"></div>
+                        <p id="hello" class="helloText">Hello there!</p>
+                    </div>
+                    <div class="name-container">
+                        <h1 id="my-name" class="my-name">I am <span>Adeola</span></h1>
+                        <p class="hero-sub-title" id="hero-sub-title" >A frontend web developer.</p>
+
+                    </div>
+                    
+                    <div class="hero-button-container">
+                        <div class="recent-download" >
+                            <a href="#">RECENT PROJECTS</a> 
+                         </div>
+                         <div class="recent-download">
+                            <a href="./assets/Untitled.pdf" target="_blank">DOWNLOAD RESUME</a> 
+                         </div>
+
+                    </div>
+                    
+
                 </div>
-                <h1 id="my-name" class="name">I am <span>Adeola</span></h1>
-                <p class="hero-sub-title" id="hero-sub-title" >A frontend web developer</p>
-                <div >
-                   <a href="#">RECENT PROJECTS</a> 
-                </div>
-                <div>
-                   <a href="#">DOWNLOAD RESUME</a> 
+                
+                <div class="hero-bottom">
+                    <div class="hero-icons">
+                        
+                           <a href="#"><i class="fab fa-linkedin"></i></a>
+                        
+                        
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        
+                        <div class="icon-line"></div>
+                    </div>
+                    <div class="hero-bottom-right">
+                        <div class="scroll-icon">
+                            <p class="scroll">scroll down</p>
+                            <i class="fas fa-long-arrow-alt-down"></i>
+                        </div>
+                        <div class="lang-menu">
+                            <div class="selected-lang" >
+                              <img id="flagimage" class="currentflag" src="https://www.countryflags.io/us/flat/32.png" alt="flag">
+                              <p id="selectedlang" class="selectedlang" >English</p>
+                            </div>
+                            <ul>
+                              <li>  <a class="de link" href="#de" data-reload>Deutsch</a> </li>
+                              <li> <a class="en link" href="#eng" data-reload>English</a> </li>
+                            </ul>
+                          </div>
+                    </div>
                 </div>
             </div>
         </div>
