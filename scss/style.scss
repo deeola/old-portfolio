@@ -3,7 +3,6 @@
 
 /*Header styling*/
 
-
 header {
   background-image: url(../assets/header-image.jpg);
   background-position: center;
@@ -104,27 +103,23 @@ header {
           }
         }
 
-        .name-container{
-            width: 90%;
+        .name-container {
+          width: 90%;
+          margin: auto;
+          .my-name {
+            text-transform: uppercase;
+            font-size: 40px;
+
             margin: auto;
-            .my-name {
-                text-transform: uppercase;
-                font-size: 40px;
-                
-                margin: auto;
-                font-weight: bold;
-              }
-      
-              .hero-sub-title {
-                
-                margin: 5px auto 10px auto;
-                text-transform: capitalize;
-                font-size: 15px;
-              }
+            font-weight: bold;
+          }
 
+          .hero-sub-title {
+            margin: 5px auto 10px auto;
+            text-transform: capitalize;
+            font-size: 15px;
+          }
         }
-
-        
 
         .hero-button-container {
           width: 90%;
@@ -151,9 +146,8 @@ header {
 
             &:hover {
               background-color: $orange-color;
-              
+
               outline: none;
-              
 
               a {
                 color: $white;
@@ -211,7 +205,6 @@ header {
               width: 100%;
               vertical-align: middle;
               cursor: pointer;
-              
 
               img {
                 width: 20px;
@@ -220,7 +213,7 @@ header {
               }
               .selectedlang {
                 font-size: 14px;
-               margin-top: 2px;
+                margin-top: 2px;
               }
             }
 
@@ -295,115 +288,96 @@ header {
 
 /*MAIN STYLING*/
 
-main{
+main {
+  //PORTFOLIO
+  .projects {
+    width: 100%;
+    margin-top: 10px;
 
-    //PORTFOLIO
-   .projects{
-       width: 100%;
-       margin-top: 10px;
-      
+    .Project-heading {
+      background-color: $deep-green;
+      width: 60%;
+      padding: 10px 10px 10px 0px;
+      background-color: #293d3928;
 
-       .Project-heading{
-           background-color:$deep-green;
-           width: 60%;
-           padding: 10px 10px 10px 0px;
-           background-color: #293d3928;
+      h2 {
+        width: 90%;
+        margin: auto;
+        color: $black;
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+        display: none;
+      }
+    }
 
-           h2{
-               width: 90%;
-               margin: auto;
-               color: $black;
-               font-size: 30px;
+    .project-control {
+      width: 90%;
+      margin: 15px auto 30px auto;
+      position: relative;
 
-           }
-           p{
-               font-size: 14px;
-               display: none
-               
-           }
-       }
+      &::before {
+        background-color: rgba(243, 242, 242, 0.233);
+        width: 100%;
+        height: 80%;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
 
-       .project-control{
-           width: 90%;
-           margin: 15px auto 30px auto;
-           position: relative;
-          
-           &::before{
-               background-color: rgba(243, 242, 242, 0.233);
-               width: 100%;
-               height: 80%;
-               content: '';
-               position: absolute;
-               bottom: 0;
-               left: 0;
-               z-index: -1;
-               
+      .project-image-section {
+        margin-bottom: 10px;
+        .project-image {
+          margin-bottom: 2px;
+        }
 
-           }
+        .project-link-desktop {
+          display: none;
+        }
+      }
 
-           .project-image-section{
-               margin-bottom: 10px;
-               .project-image{
-                   margin-bottom: 2px;
- 
-               }
+      .project-text-section {
+        //    text-align: center;
+        h3 {
+          color: $deep-green;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+        p {
+          font-size: 12px;
+          width: 100%;
+          line-height: 1.5;
+          color: $black;
+        }
+        .project-second-para {
+          margin-top: 10px;
+        }
+      }
 
-               .project-link-desktop{
-                   display: none
-               }
-
-           }
-
-           .project-text-section{
-            //    text-align: center;
-               h3{
-                color: $deep-green;
-                margin-bottom: 10px;
-                text-align: center;
-
-               }
-               p{
-                   font-size: 12px;
-                   width: 100%;
-                   line-height: 1.5;
-                   color: $black;
-                   
-               }
-               .project-second-para{
-                   margin-top: 10px;
-
-               }
-
-           }
-
-           .project-link-mobile{
-               display: flex;
-               flex-direction: column;
-               margin-top: 20px;
-               a{
-                   width: 80%;
-                   text-align: center;
-                   margin: auto auto 10px auto;
-                   text-decoration: none;
-                   text-transform: uppercase;
-                   border: 2px solid $orange-color;
-                   padding: 8px 0px;
-                   color: $orange-color;
-                   font-size: 12px
-                   
-                   
-
-               }
-
-           }
-       }
-   }
+      .project-link-mobile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        a {
+          width: 80%;
+          text-align: center;
+          margin: auto auto 10px auto;
+          text-decoration: none;
+          text-transform: uppercase;
+          border: 2px solid $orange-color;
+          padding: 8px 0px;
+          color: $orange-color;
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
-
-
 
 /*MEDIA QUERY FOR TABLET*/
 
-
-@import 'tablet';
-@import 'desktop';
+@import "tablet";
+@import "desktop";

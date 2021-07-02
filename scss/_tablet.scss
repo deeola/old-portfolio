@@ -115,7 +115,6 @@
               margin: auto 0px auto auto;
 
               .selected-lang {
-               
                 .selectedlang {
                   margin-top: 0px;
                   width: 100%;
@@ -138,6 +137,57 @@
                 //     }
                 // }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*MAIN*/
+  main {
+    //PORTFOLIO
+    .projects {
+      width: 100%;
+      margin-top: 20px;
+
+      .Project-heading {
+        h2 {
+          font-size: 35px;
+          color: $deep-green;
+        }
+        p {
+          font-size: 14px;
+          display: block;
+          width: 90%;
+          margin: auto;
+          color: black;
+        }
+      }
+
+      .project-control {
+        .project-text-section {
+          //    text-align: center;
+          h3 {
+            font-size: 25px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+
+        .project-link-mobile {
+          display: flex;
+          flex-direction: row;
+          margin-top: 20px;
+          a {
+            width: 48%;
+            padding: 10px 0px;
+            font-size: 14px;
+            &:hover {
+              background-color: $orange-color;
+              outline: none;
+              color: $white;
             }
           }
         }

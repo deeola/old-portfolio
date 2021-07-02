@@ -338,7 +338,7 @@ main .projects .project-control::before {
   background-color: rgba(243, 242, 242, 0.233);
   width: 100%;
   height: 80%;
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -497,6 +497,43 @@ main .projects .project-control .project-link-mobile a {
     top: 30px;
     right: 0px;
     left: unset;
+  }
+  /*MAIN*/
+  main .projects {
+    width: 100%;
+    margin-top: 20px;
+  }
+  main .projects .Project-heading h2 {
+    font-size: 35px;
+    color: #293D39;
+  }
+  main .projects .Project-heading p {
+    font-size: 14px;
+    display: block;
+    width: 90%;
+    margin: auto;
+    color: black;
+  }
+  main .projects .project-control .project-text-section h3 {
+    font-size: 25px;
+  }
+  main .projects .project-control .project-text-section p {
+    font-size: 15px;
+  }
+  main .projects .project-control .project-link-mobile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  main .projects .project-control .project-link-mobile a {
+    width: 48%;
+    padding: 10px 0px;
+    font-size: 14px;
+  }
+  main .projects .project-control .project-link-mobile a:hover {
+    background-color: #f58f29;
+    outline: none;
+    color: white;
   }
 }
 
