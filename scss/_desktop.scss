@@ -239,8 +239,8 @@
                 display: flex;
                 flex-direction: row;
                 margin-top: 20px;
-                width: 100%;
-                margin: auto;
+                width: 50%;
+                margin: auto auto auto 0px;
                 justify-content: space-between;
                 margin-top: 20px;
                 a {
@@ -253,6 +253,8 @@
                     padding: 8px 0px;
                     color: $orange-color;
                     font-size: 12px;
+                    transition: 300ms ease-in;
+                    font-weight: 600;
 
                     &:hover {
                         background-color: $orange-color;
@@ -265,6 +267,11 @@
 
             .left-control{
                 order: 2;
+
+                .project-link-desktop {
+                    margin: auto 0px auto auto;
+
+                }
 
                 
             }

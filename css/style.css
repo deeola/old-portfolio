@@ -688,8 +688,8 @@ main .projects .project-control .project-link-mobile a {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    width: 100%;
-    margin: auto;
+    width: 50%;
+    margin: auto auto auto 0px;
     justify-content: space-between;
     margin-top: 20px;
   }
@@ -703,6 +703,8 @@ main .projects .project-control .project-link-mobile a {
     padding: 8px 0px;
     color: #f58f29;
     font-size: 12px;
+    transition: 300ms ease-in;
+    font-weight: 600;
   }
   main .projects .project-control .project-image-section .project-link-desktop a:hover {
     background-color: #f58f29;
@@ -711,6 +713,9 @@ main .projects .project-control .project-link-mobile a {
   }
   main .projects .project-control .left-control {
     order: 2;
+  }
+  main .projects .project-control .left-control .project-link-desktop {
+    margin: auto 0px auto auto;
   }
   main .projects .project-control .project-text-section {
     width: 40%;
