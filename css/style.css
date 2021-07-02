@@ -404,3 +404,116 @@ header .hero .hero-container .hero-bottom .hero-bottom-right .lang-menu:hover ul
     left: unset;
   }
 }
+
+@media (min-width: 1024px) {
+  header nav .logo,
+  header nav .hamburger {
+    width: 35px;
+  }
+  header nav ul {
+    display: flex;
+    position: relative;
+    height: unset;
+    flex-direction: row;
+    width: 30%;
+    top: unset;
+    background-color: unset;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3px;
+  }
+  header nav ul li a {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    transition: 200ms ease-in;
+  }
+  header nav ul li a:hover {
+    color: #f58f29;
+  }
+  header nav .hamburger {
+    display: none;
+  }
+  header .hero .hero-container .hero-top {
+    width: 90%;
+    margin-bottom: 60px;
+  }
+  header .hero .hero-container .hero-top .hello {
+    flex-direction: row;
+    width: 35%;
+  }
+  header .hero .hero-container .hero-top .hello .hello-line {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  header .hero .hero-container .hero-top .hello .helloText {
+    width: 350px;
+    font-size: 16px;
+  }
+  header .hero .hero-container .hero-top .name-container .my-name {
+    font-size: 76px;
+    width: 700px;
+  }
+  header .hero .hero-container .hero-top .name-container .hero-sub-title {
+    font-size: 1.2rem;
+    width: 700px;
+    padding-left: 140px;
+  }
+  header .hero .hero-container .hero-top .hero-button-container {
+    width: 560px;
+    margin: auto 0px auto auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  header .hero .hero-container .hero-top .hero-button-container .recent-download {
+    margin: 20px 0px;
+    width: 48%;
+  }
+  header .hero .hero-container .hero-top .hero-button-container .recent-download a {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  header .hero .hero-container .hero-bottom {
+    margin: auto auto 20px auto;
+  }
+  header .hero .hero-container .hero-bottom .hero-icons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 80px;
+    padding-top: 6px;
+  }
+  header .hero .hero-container .hero-bottom .hero-icons a {
+    text-decoration: none;
+    color: white;
+  }
+  header .hero .hero-container .hero-bottom .hero-icons a i {
+    font-size: 25px;
+  }
+  header .hero .hero-container .hero-bottom .hero-bottom-right {
+    width: 60%;
+  }
+  header .hero .hero-container .hero-bottom .hero-bottom-right .scroll-icon {
+    align-items: flex-start;
+    width: 100%;
+  }
+  header .hero .hero-container .hero-bottom .hero-bottom-right .scroll-icon i {
+    margin-left: 30px;
+  }
+  header .hero .hero-container .hero-bottom .hero-bottom-right .lang-menu {
+    width: 90px;
+    margin: auto 0px auto auto;
+  }
+  header .hero .hero-container .hero-bottom .hero-bottom-right .lang-menu .selected-lang .selectedlang {
+    margin-top: 0px;
+    width: 100%;
+    text-align: right;
+  }
+  header .hero .hero-container .hero-bottom .hero-bottom-right .lang-menu ul {
+    top: 30px;
+    right: 0px;
+    left: unset;
+  }
+}
