@@ -447,7 +447,7 @@ main .aboutme .about-container .skillset-section h4 {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.486);
   color: #252525;
-  width: 40%;
+  width: 120px;
   text-align: center;
 }
 
@@ -462,6 +462,7 @@ main .aboutme .about-container .skillset-section .skill-grid-container .skill {
   padding: 4px;
   background-color: rgba(117, 131, 117, 0.486);
   border-radius: 4px;
+  font-size: 13px;
 }
 
 /*MEDIA QUERY FOR TABLET*/
@@ -571,6 +572,9 @@ main .aboutme .about-container .skillset-section .skill-grid-container .skill {
     left: unset;
   }
   /*MAIN*/
+  main {
+    /*ABOUT ME*/
+  }
   main .projects {
     width: 100%;
     margin-top: 20px;
@@ -606,6 +610,20 @@ main .aboutme .about-container .skillset-section .skill-grid-container .skill {
     background-color: #f58f29;
     outline: none;
     color: white;
+  }
+  main .aboutme .about-container .skillset-section h4 {
+    width: 200px;
+  }
+  main .aboutme .about-container .skillset-section .skill-grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+  }
+  main .aboutme .about-container .skillset-section .skill-grid-container .skill {
+    padding: 4px;
+    background-color: rgba(117, 131, 117, 0.486);
+    border-radius: 4px;
   }
 }
 
