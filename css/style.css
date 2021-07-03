@@ -698,6 +698,7 @@ main .contactme .contact-container .contact-details .socials .icons-contact a i 
   /*MAIN*/
   main {
     /*ABOUT ME*/
+    /*CONTACT ME*/
   }
   main .projects {
     width: 100%;
@@ -735,6 +736,9 @@ main .contactme .contact-container .contact-details .socials .icons-contact a i 
     outline: none;
     color: white;
   }
+  main .aboutme .about-container {
+    padding: 40px;
+  }
   main .aboutme .about-container .skillset-section h4 {
     width: 200px;
   }
@@ -748,6 +752,24 @@ main .contactme .contact-container .contact-details .socials .icons-contact a i 
     padding: 4px;
     background-color: rgba(117, 131, 117, 0.486);
     border-radius: 4px;
+  }
+  main .contactme .contact-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  main .contactme .contact-container form {
+    width: 50%;
+  }
+  main .contactme .contact-container .contact-details {
+    margin-top: unset;
+    width: 30%;
+  }
+  main .contactme .contact-container .contact-details .contact-details-control {
+    margin-top: 40px;
+    align-items: flex-start;
+  }
+  main .contactme .contact-container .contact-details .socials .icons-contact {
+    width: 70px;
   }
 }
 
@@ -987,10 +1009,8 @@ main .contactme .contact-container .contact-details .socials .icons-contact a i 
   }
   main .aboutme .about-container .skillset-section .skill-grid-container .skill {
     padding: 6px;
-    background-color: #f58f29;
     border-radius: 4px;
     font-size: 13px;
     text-align: center;
-    color: white;
   }
 }
