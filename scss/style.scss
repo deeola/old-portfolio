@@ -427,7 +427,7 @@ main {
           padding: 10px;
           background-color: rgba(255, 255, 255, 0.486);
           color: $black;
-          width: 40%;
+          width: 120px;
           text-align: center;
         }
 
@@ -442,6 +442,7 @@ main {
             background-color: rgba(117, 131, 117, 0.486);
             // color: $orange-color;
             border-radius: 4px;
+            font-size: 13px;
           }
         }
       }
