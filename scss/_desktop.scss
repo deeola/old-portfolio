@@ -181,22 +181,6 @@
     //PORTFOLIO
     .projects {
       margin-top: 40px;
-      //   .Project-heading {
-      //     background-color: $deep-green;
-      //     width: 60%;
-      //     padding: 10px 10px 10px 0px;
-      //     background-color: #293d3928;
-
-      //     h2 {
-      //       width: 90%;
-      //       margin: auto;
-      //       color: $black;
-      //       font-size: 30px;
-      //     }
-      //     p {
-
-      //     }
-      //   }
 
       .project-control {
         width: 90%;
@@ -326,11 +310,10 @@
 
             .skill {
               padding: 6px;
-              
+
               border-radius: 4px;
               font-size: 13px;
               text-align: center;
-              
             }
           }
         }
@@ -340,38 +323,213 @@
     /*CONTACT ME*/
 
     .contactme {
-      
-
       .contact-container {
         display: flex;
         justify-content: space-between;
         width: 900px;
-        
-      
+
         form {
           width: 48%;
-          
         }
         .contact-details {
           margin-top: unset;
           width: 40%;
 
           .contact-details-control {
-           
             margin-top: 40px;
             align-items: flex-end;
-          
           }
 
           .socials {
-            .icons-contact {
-             
-              width: 70px;
+            .social-type {
+              font-size: 12px;
               
-            
+            }
+            .icons-contact {
+              width: 70px;
             }
           }
         }
+      }
+    }
+  }
+
+  /*Footer*/
+  footer {
+    .footer-container {
+      nav {
+        margin-top: 0px;
+        margin-left: 50px;
+        position: relative;
+        z-index: 3;
+        width: 500px;
+        ul {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+
+          li {
+            list-style: none;
+            margin-top: unset;
+            margin-left: 20px;
+            a {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+
+      .download-crafted {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin-top: unset;
+        background: $deep-green;
+        position: absolute;
+        right: 0;
+        width: 32%;
+        padding: 10px 20px;
+
+        .recent-download {
+          a {
+            color: $white;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 12px;
+          }
+        }
+
+        p {
+          font-size: 10px;
+          color: $orange-color;
+          text-transform: capitalize;
+          margin-top: 15px;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  /*Footer*/
+  footer {
+    .footer-container {
+      nav {
+        width: 450px;
+        margin-left: 180px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  //HEADER
+
+  header {
+    .hero {
+      .hero-container {
+        .hero-top {
+          .hello {
+            .helloText {
+              font-size: 20px;
+            }
+          }
+
+          .name-container {
+            .my-name {
+              font-size: 90px;
+              width: 800px;
+            }
+
+            .hero-sub-title {
+              font-size: 1.2rem;
+              width: 700px;
+              padding-left: 35px;
+              margin-bottom: 20px;
+            }
+          }
+
+          .hero-button-container {
+            width: 660px;
+          }
+        }
+
+        //HERO BOTTOM
+        .hero-bottom {
+          .hero-bottom-right {
+            .scroll-icon {
+              p {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*MAIN SESSION*/
+  main {
+    //PORTFOLIO
+    .projects {
+      .project-control {
+        .project-text-section {
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    /*ABOUT ME*/
+
+    .aboutme {
+      .about-container {
+        .about-text-container {
+          font-size: 20px;
+        }
+      }
+    }
+
+    /*CONTACT ME*/
+
+    .contactme {
+      .contact-container {
+        .contact-details {
+          .contact-details-control {
+            .contact-type {
+              font-size: 12px;
+            }
+
+            .contact-main {
+              font-size: 20px;
+            }
+          }
+
+          .socials {
+            
+            .icons-contact {
+              a {
+                i {
+                  font-size: 32px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*Footer*/
+  footer {
+    .footer-container {
+      nav {
+        width: 600px;
+        margin-left: 250px;
       }
     }
   }
