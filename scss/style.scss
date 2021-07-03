@@ -375,6 +375,78 @@ main {
       }
     }
   }
+
+  /*ABOUT ME*/
+
+  .aboutme {
+    margin-top: 30px;
+    padding-bottom: 30px;
+
+    .Project-heading {
+      background-color: $deep-green;
+      width: 60%;
+      padding: 10px 10px 10px 0px;
+      background-color: #293d3928;
+      margin: auto 0px auto auto;
+
+      h2 {
+        width: 90%;
+        margin: auto;
+        color: $black;
+        font-size: 30px;
+      }
+    }
+    .about-container {
+      background-color: $deep-green;
+      width: 100%;
+      margin: auto;
+      margin-top: 15px;
+      padding: 20px;
+
+      .about-text-container {
+        line-height: 1.5;
+
+        .about-hello {
+          margin-bottom: 5px;
+        }
+
+        .about-below-paragraph {
+          margin: 20px 0px;
+
+          a {
+            text-transform: uppercase;
+            color: $orange-color;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .skillset-section {
+        h4 {
+          margin: auto auto 15px auto;
+          padding: 10px;
+          background-color: rgba(255, 255, 255, 0.486);
+          color: $black;
+          width: 40%;
+          text-align: center;
+        }
+
+        .skill-grid-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 10px;
+          text-align: center;
+
+          .skill {
+            padding: 4px;
+            background-color: rgba(117, 131, 117, 0.486);
+            // color: $orange-color;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
 }
 
 /*MEDIA QUERY FOR TABLET*/

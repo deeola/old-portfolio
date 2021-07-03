@@ -272,7 +272,7 @@ header .hero .hero-container .hero-bottom .hero-bottom-right .lang-menu ul li a 
   display: block;
   padding: 5px 10px;
   text-decoration: none;
-  color: black;
+  color: #252525;
   font-size: 12px;
 }
 
@@ -304,6 +304,10 @@ header .hero .hero-container .hero-bottom .hero-bottom-right .lang-menu:hover ul
 }
 
 /*MAIN STYLING*/
+main {
+  /*ABOUT ME*/
+}
+
 main .projects {
   width: 100%;
   margin-top: 10px;
@@ -319,7 +323,7 @@ main .projects .Project-heading {
 main .projects .Project-heading h2 {
   width: 90%;
   margin: auto;
-  color: black;
+  color: #252525;
   font-size: 30px;
 }
 
@@ -367,7 +371,7 @@ main .projects .project-control .project-text-section p {
   font-size: 12px;
   width: 100%;
   line-height: 1.5;
-  color: black;
+  color: #252525;
 }
 
 main .projects .project-control .project-text-section .project-second-para {
@@ -390,6 +394,74 @@ main .projects .project-control .project-link-mobile a {
   padding: 8px 0px;
   color: #f58f29;
   font-size: 12px;
+}
+
+main .aboutme {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+main .aboutme .Project-heading {
+  background-color: #293D39;
+  width: 60%;
+  padding: 10px 10px 10px 0px;
+  background-color: #293d3928;
+  margin: auto 0px auto auto;
+}
+
+main .aboutme .Project-heading h2 {
+  width: 90%;
+  margin: auto;
+  color: #252525;
+  font-size: 30px;
+}
+
+main .aboutme .about-container {
+  background-color: #293D39;
+  width: 100%;
+  margin: auto;
+  margin-top: 15px;
+  padding: 20px;
+}
+
+main .aboutme .about-container .about-text-container {
+  line-height: 1.5;
+}
+
+main .aboutme .about-container .about-text-container .about-hello {
+  margin-bottom: 5px;
+}
+
+main .aboutme .about-container .about-text-container .about-below-paragraph {
+  margin: 20px 0px;
+}
+
+main .aboutme .about-container .about-text-container .about-below-paragraph a {
+  text-transform: uppercase;
+  color: #f58f29;
+  text-decoration: none;
+}
+
+main .aboutme .about-container .skillset-section h4 {
+  margin: auto auto 15px auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.486);
+  color: #252525;
+  width: 40%;
+  text-align: center;
+}
+
+main .aboutme .about-container .skillset-section .skill-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+}
+
+main .aboutme .about-container .skillset-section .skill-grid-container .skill {
+  padding: 4px;
+  background-color: rgba(117, 131, 117, 0.486);
+  border-radius: 4px;
 }
 
 /*MEDIA QUERY FOR TABLET*/
