@@ -602,6 +602,88 @@ main {
   }
 }
 
+footer{
+  margin-top: 70px;
+  
+  
+
+  .footer-container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background-color: rgba(218, 218, 218, 0.774);
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 30px;
+
+    .footer-logo{
+      background-color: $deep-green;
+      padding: 10px;
+      width: 70px;
+      position: absolute;
+      top: -30px;
+    }
+
+    nav{
+      margin-top: 50px;
+      ul{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        
+        text-align: center;
+        li{
+          list-style: none;
+          margin-top: 10px;
+          a{
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $deep-green;
+            font-weight: 700;
+            transition: 200ms ease-in;
+            &:hover{
+              color: $orange-color;
+            }
+
+          }
+        }
+      }
+    }
+
+    .download-crafted{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      margin-top: 10px;
+
+      .recent-download{
+        a{
+          color: $deep-green;
+          font-weight: 600;
+          text-decoration: none;
+        }
+      }
+
+      p{
+        font-size: 10px;
+        color: $orange-color;
+        text-transform:capitalize;
+        margin-top: 15px;
+        font-weight: 900;
+      }
+    }
+
+    
+
+
+  }
+}
+
 /*MEDIA QUERY FOR TABLET*/
 
 @import "tablet";
