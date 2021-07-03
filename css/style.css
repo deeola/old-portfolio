@@ -717,7 +717,7 @@ main .aboutme .about-container .skillset-section .skill-grid-container .skill {
     font-size: 25px;
   }
   header .hero .hero-container .hero-bottom .hero-icons .icon-line {
-    content: '';
+    content: "";
     width: 2px;
     height: 40px;
     background-color: #f58f29;
@@ -748,6 +748,9 @@ main .aboutme .about-container .skillset-section .skill-grid-container .skill {
     left: unset;
   }
   /*MAIN SESSION*/
+  main {
+    /*ABOUT ME*/
+  }
   main .projects {
     margin-top: 40px;
   }
@@ -814,7 +817,7 @@ main .aboutme .about-container .skillset-section .skill-grid-container .skill {
     text-align: left;
   }
   main .projects .project-control .project-text-section p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   main .projects .project-control .project-text-section .project-second-para {
     margin-top: 10px;
@@ -822,11 +825,48 @@ main .aboutme .about-container .skillset-section .skill-grid-container .skill {
   main .projects .project-control .project-link-mobile {
     display: none;
   }
-  main .projects .archstudio::before, main .projects .sunnyside::before {
+  main .projects .archstudio::before,
+  main .projects .sunnyside::before {
     left: 0;
     right: unset;
   }
   main .projects .audiophile {
     margin-top: 40px;
+  }
+  main .aboutme .about-container {
+    margin-top: 15px;
+    padding: 40px 50px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .aboutme .about-container .about-text-container {
+    line-height: 1.5;
+    width: 40%;
+    font-size: 16px;
+  }
+  main .aboutme .about-container .skillset-section {
+    width: 45%;
+  }
+  main .aboutme .about-container .skillset-section h4 {
+    margin: auto auto 20px 0px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.486);
+    color: #252525;
+    width: 120px;
+    text-align: center;
+  }
+  main .aboutme .about-container .skillset-section .skill-grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+  }
+  main .aboutme .about-container .skillset-section .skill-grid-container .skill {
+    padding: 6px;
+    background-color: #f58f29;
+    border-radius: 4px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
   }
 }
