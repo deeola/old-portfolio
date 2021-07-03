@@ -336,5 +336,43 @@
         }
       }
     }
+
+    /*CONTACT ME*/
+
+    .contactme {
+      
+
+      .contact-container {
+        display: flex;
+        justify-content: space-between;
+        width: 900px;
+        
+      
+        form {
+          width: 48%;
+          
+        }
+        .contact-details {
+          margin-top: unset;
+          width: 40%;
+
+          .contact-details-control {
+           
+            margin-top: 40px;
+            align-items: flex-end;
+          
+          }
+
+          .socials {
+            .icons-contact {
+             
+              width: 70px;
+              
+            
+            }
+          }
+        }
+      }
+    }
   }
 }
