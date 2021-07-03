@@ -96,6 +96,10 @@
               color: $white;
               i {
                 font-size: 25px;
+
+                &:hover{
+                  color: $orange-color;
+                }
               }
             }
           }

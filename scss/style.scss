@@ -535,6 +535,11 @@ main {
             border: none;
             margin-top: 10px;
             cursor: pointer;
+            transition: 300ms ease-in;
+
+            &:hover{
+              background-color: $deep-green;
+            }
           }
 
         }
@@ -581,6 +586,9 @@ main {
               i{
                
                 font-size: 26px;
+                &:hover{
+                  color: $orange-color;
+                }
               }
             }
 

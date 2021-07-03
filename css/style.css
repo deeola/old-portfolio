@@ -546,6 +546,11 @@ main .contactme .contact-container form .form-container button {
   border: none;
   margin-top: 10px;
   cursor: pointer;
+  transition: 300ms ease-in;
+}
+
+main .contactme .contact-container form .form-container button:hover {
+  background-color: #293D39;
 }
 
 main .contactme .contact-container .contact-details {
@@ -587,6 +592,10 @@ main .contactme .contact-container .contact-details .socials .icons-contact a {
 
 main .contactme .contact-container .contact-details .socials .icons-contact a i {
   font-size: 26px;
+}
+
+main .contactme .contact-container .contact-details .socials .icons-contact a i:hover {
+  color: #f58f29;
 }
 
 /*MEDIA QUERY FOR TABLET*/
@@ -670,6 +679,9 @@ main .contactme .contact-container .contact-details .socials .icons-contact a i 
   }
   header .hero .hero-container .hero-bottom .hero-icons a i {
     font-size: 25px;
+  }
+  header .hero .hero-container .hero-bottom .hero-icons a i:hover {
+    color: #f58f29;
   }
   header .hero .hero-container .hero-bottom .hero-bottom-right {
     width: 60%;
@@ -896,6 +908,7 @@ main .contactme .contact-container .contact-details .socials .icons-contact a i 
   /*MAIN SESSION*/
   main {
     /*ABOUT ME*/
+    /*CONTACT ME*/
   }
   main .projects {
     margin-top: 40px;
@@ -1012,5 +1025,24 @@ main .contactme .contact-container .contact-details .socials .icons-contact a i 
     border-radius: 4px;
     font-size: 13px;
     text-align: center;
+  }
+  main .contactme .contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+  }
+  main .contactme .contact-container form {
+    width: 48%;
+  }
+  main .contactme .contact-container .contact-details {
+    margin-top: unset;
+    width: 40%;
+  }
+  main .contactme .contact-container .contact-details .contact-details-control {
+    margin-top: 40px;
+    align-items: flex-end;
+  }
+  main .contactme .contact-container .contact-details .socials .icons-contact {
+    width: 70px;
   }
 }
