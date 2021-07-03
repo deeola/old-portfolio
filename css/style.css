@@ -16,10 +16,13 @@ img {
 body {
   color: white;
   overflow-x: hidden;
+  position: relative;
+  height: 100%;
 }
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 /*Header styling*/
@@ -554,7 +557,7 @@ main .contactme .contact-container form .form-container button:hover {
 }
 
 main .contactme .contact-container .contact-details {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 main .contactme .contact-container .contact-details .contact-details-control {
@@ -629,7 +632,7 @@ footer .footer-container nav {
 footer .footer-container nav ul {
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
@@ -645,6 +648,7 @@ footer .footer-container nav ul li a {
   color: #293D39;
   font-weight: 700;
   transition: 200ms ease-in;
+  font-size: 14px;
 }
 
 footer .footer-container nav ul li a:hover {
@@ -858,6 +862,78 @@ footer .footer-container .download-crafted p {
   }
   main .contactme .contact-container .contact-details .socials .icons-contact {
     width: 70px;
+  }
+  footer {
+    margin-top: 60px;
+  }
+  footer .footer-container {
+    width: 100%;
+    background-color: unset;
+    flex-direction: row;
+    justify-content: unset;
+    position: relative;
+    padding-bottom: 0px;
+  }
+  footer .footer-container::before {
+    width: 75%;
+    background-color: rgba(218, 218, 218, 0.774);
+    position: absolute;
+    content: '';
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  footer .footer-container .footer-logo {
+    padding: 0px;
+    width: 100px;
+    position: relative;
+    top: 0px;
+  }
+  footer .footer-container nav {
+    margin-top: 0px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 3;
+    width: 50%;
+  }
+  footer .footer-container nav ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .footer-container nav ul li {
+    list-style: none;
+    margin-top: unset;
+    margin-left: 20px;
+  }
+  footer .footer-container nav ul li a {
+    font-size: 15px;
+  }
+  footer .footer-container .download-crafted {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: unset;
+    background: #293D39;
+    position: absolute;
+    right: 0;
+    width: 32%;
+    padding: 10px 20px;
+  }
+  footer .footer-container .download-crafted .recent-download a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  footer .footer-container .download-crafted p {
+    font-size: 10px;
+    color: #f58f29;
+    text-transform: capitalize;
+    margin-top: 15px;
+    font-weight: 900;
   }
 }
 
