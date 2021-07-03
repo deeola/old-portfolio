@@ -306,6 +306,7 @@ header .hero .hero-container .hero-bottom .hero-bottom-right .lang-menu:hover ul
 /*MAIN STYLING*/
 main {
   /*ABOUT ME*/
+  /*CONTACT ME*/
 }
 
 main .projects {
@@ -463,6 +464,10 @@ main .aboutme .about-container .skillset-section .skill-grid-container .skill {
   background-color: rgba(117, 131, 117, 0.486);
   border-radius: 4px;
   font-size: 13px;
+}
+
+main .contactme {
+  color: black;
 }
 
 /*MEDIA QUERY FOR TABLET*/
