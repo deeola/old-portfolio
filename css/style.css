@@ -470,6 +470,125 @@ main .contactme {
   color: black;
 }
 
+main .contactme .Project-heading {
+  background-color: #293D39;
+  width: 60%;
+  padding: 10px 10px 10px 0px;
+  background-color: #293d3928;
+  margin-bottom: 20px;
+}
+
+main .contactme .Project-heading h2 {
+  width: 90%;
+  margin: auto;
+  color: #252525;
+  font-size: 30px;
+}
+
+main .contactme .contact-container {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+main .contactme .contact-container form .form-top-div {
+  text-align: center;
+}
+
+main .contactme .contact-container form .form-top-div .form-heading {
+  color: #293D39;
+  margin-bottom: 20px;
+}
+
+main .contactme .contact-container form .form-top-div .success-message {
+  color: green;
+  font-size: 14px;
+  margin: 10px 0px;
+  display: none;
+}
+
+main .contactme .contact-container form .form-container .form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main .contactme .contact-container form .form-container .form-control input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid #838383;
+  margin-bottom: 10px;
+}
+
+main .contactme .contact-container form .form-container .form-control small {
+  margin: 5px 0px 10px 0px;
+  color: #df4343;
+  display: none;
+}
+
+main .contactme .contact-container form .form-container .form-control textarea {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #838383;
+  padding: 10px;
+}
+
+main .contactme .contact-container form .form-container button {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  background-color: #f58f29;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+main .contactme .contact-container .contact-details {
+  margin-top: 20px;
+}
+
+main .contactme .contact-container .contact-details .contact-details-control {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+
+main .contactme .contact-container .contact-details .contact-details-control .contact-type {
+  font-size: 10px;
+  font-weight: 700;
+  color: #252525;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+main .contactme .contact-container .contact-details .contact-details-control .contact-main {
+  font-weight: 900;
+  font-size: 16px;
+  color: #293D39;
+}
+
+main .contactme .contact-container .contact-details .socials .icons-contact {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+main .contactme .contact-container .contact-details .socials .icons-contact a {
+  color: #293D39;
+}
+
+main .contactme .contact-container .contact-details .socials .icons-contact a i {
+  font-size: 26px;
+}
+
 /*MEDIA QUERY FOR TABLET*/
 @media (min-width: 768px) {
   header::after {
