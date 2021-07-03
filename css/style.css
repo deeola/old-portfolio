@@ -598,6 +598,82 @@ main .contactme .contact-container .contact-details .socials .icons-contact a i:
   color: #f58f29;
 }
 
+footer {
+  margin-top: 70px;
+}
+
+footer .footer-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  background-color: rgba(218, 218, 218, 0.774);
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+footer .footer-container .footer-logo {
+  background-color: #293D39;
+  padding: 10px;
+  width: 70px;
+  position: absolute;
+  top: -30px;
+}
+
+footer .footer-container nav {
+  margin-top: 50px;
+}
+
+footer .footer-container nav ul {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer .footer-container nav ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+footer .footer-container nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #293D39;
+  font-weight: 700;
+  transition: 200ms ease-in;
+}
+
+footer .footer-container nav ul li a:hover {
+  color: #f58f29;
+}
+
+footer .footer-container .download-crafted {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer .footer-container .download-crafted .recent-download a {
+  color: #293D39;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer .footer-container .download-crafted p {
+  font-size: 10px;
+  color: #f58f29;
+  text-transform: capitalize;
+  margin-top: 15px;
+  font-weight: 900;
+}
+
 /*MEDIA QUERY FOR TABLET*/
 @media (min-width: 768px) {
   header::after {
