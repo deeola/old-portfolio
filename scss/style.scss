@@ -686,3 +686,17 @@ footer{
 
 @import "tablet";
 @import "desktop";
+
+.nav-colored {
+  background-color: $deep-green;
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+    top: 0;
+    margin: auto;
+    padding: 0px 50px;
+
+}
+.nav-transparent {
+  background-color: transparent;
+}
