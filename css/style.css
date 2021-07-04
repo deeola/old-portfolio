@@ -537,6 +537,7 @@ main .contactme .contact-container form .form-container .form-control textarea {
   height: 80px;
   border: 1px solid #838383;
   padding: 10px;
+  outline: none;
 }
 
 main .contactme .contact-container form .form-container button {

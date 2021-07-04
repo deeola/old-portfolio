@@ -15,11 +15,9 @@ window.onscroll = () => {
 //FORM SUBMIT
 
 const form = document.getElementById("my-form");
-var statuss = document.getElementById("success-message");
 
-statuss.style.display = 'block'
 
-console.log(status)
+
     
 async function handleSubmit(event) {
   event.preventDefault();
@@ -32,12 +30,18 @@ async function handleSubmit(event) {
         'Accept': 'application/json'
     }
   }).then(response => {
-    status.innerHTML = "Thanks for your submission!";
+    status.innerHTML = "Your message has been sent. I'll get back to you as soon as possible.Thanks!";
+
     status.style.display = 'block';
+    setTimeout(() => {
+        status.style.display = 'none';
+    }, 2000)
+    
     form.reset()
   }).catch(error => {
     status.innerHTML = "Oops! There was a problem submitting your form"
     status.style.display = 'block';
+    console.log(error)
   });
 }
 form.addEventListener("submit", handleSubmit)
