@@ -1,5 +1,23 @@
 const datareload = document.querySelectorAll("[data-reload]");
 
+//CHANGE FONT SIZE and WIDTH SCREEN on mobile
+
+if(window.location.hash === '#de' && window.innerWidth <= 767){
+
+    //GET HEADER
+
+    //GET TEXT
+    heroSubtitle.style.width = '585px';
+    heroSubtitle.style.width = '585px';
+    recentDownload.style.width = '250px';
+    recentDownloadSecond.style.width = '250px';
+
+
+    
+
+    
+}
+
 //CHANGE FONT SIZE and WIDTH SCREEN on tablet
 
 if(window.location.hash === '#de' && window.innerWidth >= 768){
@@ -7,8 +25,11 @@ if(window.location.hash === '#de' && window.innerWidth >= 768){
     //GET HEADER
 
     //GET TEXT
-    heroSubtitle.style.width = '585px'
-    heroSubtitle.style.width = '585px'
+    heroSubtitle.style.width = '585px';
+    heroSubtitle.style.width = '585px';
+    btnContainer.style.width = '458px'
+    recentDownload.style.width = '48%';
+    recentDownloadSecond.style.width = '48%';
     
 
     
@@ -19,8 +40,26 @@ if(window.location.hash === '#de' && window.innerWidth >= 768){
 
 if(window.location.hash === '#de' && window.innerWidth >= 1024){
     //GET TEXT
-    heroSubtitle.style.width = '585px'
+    
     heroSubtitle.style.width = '830px'
+    btnContainer.style.width = '690px'
+    
+
+    
+}
+
+//CHANGE FONT SIZE and WIDTH SCREEN on bigger desktop
+
+
+if(window.location.hash === '#de' && window.innerWidth >= 1600){
+    //GET TEXT
+
+    myName.style.width = '830px'
+    heroSubtitle.style.width = '850px'
+    btnContainer.style.width = '817px'
+
+
+    
     
 
     
@@ -37,7 +76,9 @@ const language = {
 
         'hello' : 'Hello there!',
         'myName' : 'I am Adeola',
-        'heroSubtitle' : 'A frontend web developer'
+        'heroSubtitle' : 'A frontend web developer',
+        'recentProjects' : 'RECENT PROJECTS',
+        'downloadResume' : 'DOWNLOAD RESUME'
     },
     de:{
         'home' : 'Startseite',
@@ -45,11 +86,16 @@ const language = {
         'about' : 'über',
         'contact' : 'Kontakt',
         
+        
+        
 
         //HERO
         'hello' : 'Hallo Da!',
         'myName' : 'Ich bin Adeola',
-        'heroSubtitle' : 'Ein Frontend-Webentwickler'
+        'heroSubtitle' : 'Ein Frontend-Webentwickler',
+        'recentProjects' : 'NEUESTE PROJEKTE',
+        'downloadResume' : 'DOWNLOAD LEBENSLAUF'
+        
     }
 }
 
@@ -67,6 +113,8 @@ if(window.location.hash){
         hello.textContent = language.de.hello;
         myName.textContent = language.de.myName;
         heroSubtitle.textContent = language.de.heroSubtitle;
+        recentProjects.textContent = language.de.recentProjects;
+        downloadResume.textContent = language.de.downloadResume;
 
 
 

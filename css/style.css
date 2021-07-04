@@ -137,7 +137,7 @@ header .hero .hero-container .hero-top .name-container {
 
 header .hero .hero-container .hero-top .name-container .my-name {
   text-transform: uppercase;
-  font-size: 34px;
+  font-size: 40px;
   margin: auto;
   font-weight: bold;
 }
@@ -146,6 +146,8 @@ header .hero .hero-container .hero-top .name-container .hero-sub-title {
   margin: 5px auto 10px auto;
   text-transform: capitalize;
   font-size: 15px;
+  position: relative;
+  left: 0;
 }
 
 header .hero .hero-container .hero-top .hero-button-container {
@@ -164,6 +166,8 @@ header .hero .hero-container .hero-top .hero-button-container .recent-download {
   justify-content: center;
   cursor: pointer;
   transition: 300ms ease-in;
+  position: relative;
+  left: 0;
 }
 
 header .hero .hero-container .hero-top .hero-button-container .recent-download a {
