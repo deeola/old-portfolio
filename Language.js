@@ -30,6 +30,7 @@ if(window.location.hash === '#de' && window.innerWidth >= 768){
     btnContainer.style.width = '458px'
     recentDownload.style.width = '48%';
     recentDownloadSecond.style.width = '48%';
+    scrollicon.style.marginLeft = '60px'
     
 
     
@@ -78,7 +79,8 @@ const language = {
         'myName' : 'I am Adeola',
         'heroSubtitle' : 'A frontend web developer',
         'recentProjects' : 'RECENT PROJECTS',
-        'downloadResume' : 'DOWNLOAD RESUME'
+        'downloadResume' : 'DOWNLOAD RESUME',
+        'scrolls' : 'scroll down'
     },
     de:{
         'home' : 'Startseite',
@@ -94,7 +96,8 @@ const language = {
         'myName' : 'Ich bin Adeola',
         'heroSubtitle' : 'Ein Frontend-Webentwickler',
         'recentProjects' : 'NEUESTE PROJEKTE',
-        'downloadResume' : 'DOWNLOAD LEBENSLAUF'
+        'downloadResume' : 'DOWNLOAD LEBENSLAUF',
+        'scrolls' : 'nach unten scrollen'
         
     }
 }
@@ -115,6 +118,7 @@ if(window.location.hash){
         heroSubtitle.textContent = language.de.heroSubtitle;
         recentProjects.textContent = language.de.recentProjects;
         downloadResume.textContent = language.de.downloadResume;
+        scrolls.textContent = language.de.scrolls
 
 
 
