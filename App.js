@@ -1,4 +1,4 @@
-//CHANGE NAVBAR BACKGROUND COLOR
+//CHANGE NAVBAR BACKGROUND COLOR ON SCROLL
 
 const myNav = document.getElementById("myNav");
 window.onscroll = () => {
@@ -15,7 +15,9 @@ window.onscroll = () => {
   }
 };
 
-//FORM SUBMIT AND VALIDATION
+
+
+//FORM VALIDATION
 
 const form = document.getElementById("my-form");
 const inputName = document.getElementById("name");
@@ -23,14 +25,12 @@ const inputEmail = document.getElementById("email");
 const inputSubject = document.getElementById("subject");
 const inputMessage = document.getElementById("message");
 
-function inputsCheck() {
+const inputsCheck =() => {
   //collect Values inputed
   const NameValue = inputName.value.trim(),
     subjectValue = inputSubject.value.trim(),
     emailValue = inputEmail.value.trim(),
     messageValue = inputMessage.value.trim();
-
-  console.log(NameValue, subjectValue, emailValue, messageValue);
 
   //firstName
   if (NameValue === "") {
@@ -39,7 +39,7 @@ function inputsCheck() {
     showSuccess(inputName);
   }
 
-  //lastName
+  //subject
   if (subjectValue === "") {
     showError(inputSubject, "subject cannot be empty");
   } else {
@@ -55,7 +55,7 @@ function inputsCheck() {
     showSuccess(inputEmail);
   }
 
-  //password
+  //message
   if (messageValue === "") {
     showError(inputMessage, "Message cannot be empty");
   } else {
@@ -63,9 +63,10 @@ function inputsCheck() {
   }
 }
 
+
 //SHOW FUNCTION ERROR
 
-function showError(input, message) {
+const showError = (input, message) => {
   const formControl = input.parentElement;
   const small = formControl.querySelector("small");
 
@@ -76,21 +77,20 @@ function showError(input, message) {
 
 //SHOW SUCCESS FUNCTION
 
-function showSuccess(input) {
+const showSuccess = input =>  {
   const formControl = input.parentElement;
-
-  //add success class
-
   formControl.className = "form-control success";
 }
 
-function isEmail(email) {
+const  isEmail = email => {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
     email
   );
 }
 
-//GET FORM CONTROL
+
+
+//FORM SUBMISSION 
 
 const nameParent = inputName.parentElement;
 const subjectParent = inputSubject.parentElement;
@@ -123,12 +123,12 @@ form.addEventListener("submit", (e) => {
       .then((response) => {
         status.innerHTML =
           "Your message has been sent. I'll get back to you as soon as possible.Thanks!";
-  
+
         status.style.display = "block";
         setTimeout(() => {
           status.style.display = "none";
         }, 2000);
-  
+
         form.reset();
 
         //SET BORDER TO BLACK
@@ -141,13 +141,8 @@ form.addEventListener("submit", (e) => {
       .catch((error) => {
         status.innerHTML = "Oops! There was a problem submitting your form";
         status.style.display = "block";
-        
       });
   }
-
-  
-
-  
 });
 
 //HAMBURGER
