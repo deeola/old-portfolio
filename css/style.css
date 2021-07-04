@@ -503,7 +503,7 @@ main .contactme .contact-container form .form-top-div .form-heading {
   margin-bottom: 20px;
 }
 
-main .contactme .contact-container form .form-top-div .success-message {
+main .contactme .contact-container form .form-top-div #success-message {
   color: green;
   font-size: 14px;
   margin: 10px 0px;
