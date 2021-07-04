@@ -57,10 +57,6 @@ const navUl = document.getElementById('nav-ul');
 //Open Navigation bar
 hamopen.addEventListener('click', () => {
   navUl.style.display = 'flex';
-  navUl.style.left = '0px';
-  navUl.style.opacity = '1';
-  navUl.style.transition = '300ms ease-in'
-
   //SHOW CLOSE ICON AND HIDE HAMBURGER
   hamclose.style.display= 'block';
   hamopen.style.display = 'none';
@@ -82,7 +78,7 @@ hamclose.addEventListener('click', () => {
 
 const navLi = navUl.children;
 
-let navArray = Array.from(navLi)
+const navArray = Array.from(navLi)
 
 navArray.forEach( link => {
 
@@ -91,8 +87,6 @@ navArray.forEach( link => {
   })
   
 })
-
-
 
 
 //Function to close menu icon

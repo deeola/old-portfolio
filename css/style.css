@@ -72,8 +72,7 @@ header nav ul {
   width: 100%;
   height: 200px;
   top: 3rem;
-  left: -400px;
-  opacity: 0;
+  left: 0;
   display: none;
 }
 
@@ -958,7 +957,7 @@ footer .footer-container .download-crafted p {
     width: 35px;
   }
   header nav ul {
-    display: flex;
+    display: flex !important;
     position: relative;
     height: unset;
     flex-direction: row;
@@ -1332,16 +1331,4 @@ footer .footer-container .download-crafted p {
 
 .nav-transparent {
   background-color: transparent;
-}
-
-.displayNav {
-  display: flex;
-}
-
-.displayIcon {
-  display: block;
-}
-
-.hideIcon {
-  display: none;
 }

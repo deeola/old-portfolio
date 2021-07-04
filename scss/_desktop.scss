@@ -16,7 +16,7 @@
       }
 
       ul {
-        display: flex;
+        display: flex !important;
         position: relative;
         height: unset;
         flex-direction: row;
