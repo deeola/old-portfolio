@@ -32,9 +32,8 @@ header {
     position: relative;
     z-index: 3;
 
-    .logo,
-    .hamburger {
-      width: 30px;
+    .logo {
+      width: 40px;
       cursor: pointer;
     }
 
@@ -48,8 +47,10 @@ header {
       width: 100%;
       height: 200px;
       top: 3rem;
-      left: 0;
+      left: -400px;
+      opacity: 0;
       display: none;
+
 
       li {
         list-style: none;
@@ -64,8 +65,19 @@ header {
     .hamburger {
       display: flex;
       cursor: pointer;
+      width: 32px;
       .close-menu {
         display: none;
+        // background-color: aquamarine !important;
+        filter: invert(99%) sepia(4%) saturate(881%) hue-rotate(242deg) brightness(117%) contrast(100%);
+        width: 90%;
+        
+
+        // i{
+        //   color: $white;
+          
+        // }
+        
       }
     }
   }
@@ -695,9 +707,26 @@ footer{
   position: fixed;
     top: 0;
     margin: auto;
-    padding: 0px 50px;
+    padding: 0px 40px;
+    transition: 200ms ease-in;
 
 }
 .nav-transparent {
   background-color: transparent;
+}
+
+
+.displayNav{
+  display: flex;
+}
+
+.displayIcon{
+  display: block ;
+  
+  
+}
+
+.hideIcon{
+  display: none;
+  
 }

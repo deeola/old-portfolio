@@ -12,14 +12,14 @@
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/2736c38521.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body">
     <!--HEADER-->
     <header id="header">
         <nav id="myNav">
             <div class="logo" id="logo">
                 <img src="./assets/logo.svg" alt="logo">
             </div>
-            <ul>
+            <ul class="nav-ul" id="nav-ul">
                 <li><a id="home" href="#header">Home</a></li>
                 <li><a id="project" href="#projects">Projects</a></li>
                 <li><a id="about" href="#aboutme">About</a></li>
@@ -27,7 +27,11 @@
             </ul>
             <div class="hamburger" id="hamburger">
                 <img class="open-menu" id="open-menu" src="./assets/icons/ham-open.svg" alt="open-menu">
-                <img class="close-menu" id="close-menu" src="./assets/icons/icon-close.svg" alt="close-menu">
+                <!-- <div class="close-menu" id="close-menu">
+                    <i class="fas fa-times"></i>
+                </div> -->
+                
+                <img class="close-menu" id="close-menu"  src="./assets/icons/icon-close.svg" alt="close-menu">
             </div>
         </nav>
         <div id="hero" class="hero">

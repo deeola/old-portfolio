@@ -45,3 +45,60 @@ async function handleSubmit(event) {
   });
 }
 form.addEventListener("submit", handleSubmit)
+
+
+//HAMBURGER
+
+const hamopen = document.getElementById('open-menu');
+const hamclose = document.getElementById('close-menu');
+const navUl = document.getElementById('nav-ul');
+
+
+//Open Navigation bar
+hamopen.addEventListener('click', () => {
+  navUl.style.display = 'flex';
+  navUl.style.left = '0px';
+  navUl.style.opacity = '1';
+  navUl.style.transition = '300ms ease-in'
+
+  //SHOW CLOSE ICON AND HIDE HAMBURGER
+  hamclose.style.display= 'block';
+  hamopen.style.display = 'none';
+
+})
+
+//Close Navigation bar
+hamclose.addEventListener('click', () => {
+  navUl.style.display = 'none';
+  
+
+ //HIDE CLOSE ICON AND SHOW HAMBURGER
+  hamclose.style.display = 'none';
+  hamopen.style.display = ' block';
+  
+})
+
+//CLOSE NAVBAR ON ICON CLicks
+
+const navLi = navUl.children;
+
+let navArray = Array.from(navLi)
+
+navArray.forEach( link => {
+
+  link.addEventListener('click', () => {
+    closeMenu()
+  })
+  
+})
+
+
+
+
+//Function to close menu icon
+
+const closeMenu = () => {
+  navUl.style.display = 'none';
+  hamclose.style.display = 'none';
+  hamopen.style.display = 'block';
+}
