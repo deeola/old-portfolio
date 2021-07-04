@@ -3,6 +3,9 @@
 
 /*Header styling*/
 
+
+
+
 header {
   background-image: url(../assets/header-image.jpg);
   background-position: center;
@@ -510,30 +513,75 @@ main {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            position: relative;
+            margin-bottom: 15px;
             input{
+              display: block;
               width: 100%;
               height: 40px;
               padding: 10px;
-              border-radius: 2px;
+              font-weight: 600;
+              border-radius: 5px;
               outline: none;
               border: 1px solid $form-border;
-              margin-bottom: 10px;
-
-            }
-            small{
-              margin: 5px 0px 10px 0px;
-              color: rgb(223, 67, 67);
-              display: none;
+              font-size: 0.7rem;
               
 
             }
+            small{
+              right: 0px;
+              position: relative;
+              width: 100%;
+              display: inline-block;
+              display: flex;
+              justify-content: flex-end;
+              font-size: 13px;
+              margin-top: 5px;
+              margin-bottom: 20px;
+              display: none;
+                          
+
+            }
+
+            img {
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              width: 20px;
+              display: none;
+            }
 
             textarea{
+
+              display: block;
               width: 100%;
               height: 80px;
-              border: 1px solid $form-border;
               padding: 10px;
+              font-weight: 600;
+              border-radius: 5px;
               outline: none;
+              border: 1px solid $form-border;
+              font-size: 0.7rem;
+            }
+
+            &.error input, &.error textarea {
+              border: 1px solid rgb(177, 31, 31);
+            }
+
+            &.error img {
+              display: block;
+            }
+
+            &.error small {
+              display: block;
+              display: flex;
+              justify-content: flex-end;
+              font-size: 10px;
+              color: rgb(177, 31, 31);
+            }
+
+            &.success input, &.success textarea {
+              border: 1px solid green;
             }
           }
 
@@ -713,19 +761,3 @@ footer{
 .nav-transparent {
   background-color: transparent;
 }
-
-
-// .displayNav{
-//   display: flex;
-// }
-
-// .displayIcon{
-//   display: block ;
-  
-  
-// }
-
-// .hideIcon{
-//   display: none;
-  
-// }

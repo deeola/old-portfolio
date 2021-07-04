@@ -273,7 +273,7 @@
                 <h2>CONTACT</h2>
             </div>
             <div class="contact-container">
-                <form id="my-form" action="https://formspree.io/f/mjvjojgz" method="POST">
+                <form id="my-form" action="https://formspree.io/f/mjvjojgz" method="POST" novalidate>
                     <div class="form-top-div">
                         <div class="form-heading">
                             <h5>Do you have any question or message for me?
@@ -289,20 +289,24 @@
                         
                             
                         <div class="form-control">
-                            <input id="name" name="myname" type="text" placeholder="Name" autocomplete="off" required>
+                            <input id="name" name="myname" type="text" placeholder="Name" autocomplete="off" >
                             <small>error message</small>
+                            <img src="./assets/icons/icon-error.svg" alt="error-icon" />
                         </div>
                         <div class="form-control">
-                            <input id="email" name="email" type="email" placeholder="E-mail" required>
+                            <input id="email" name="email" type="email" placeholder="E-mail" >
                             <small>error message</small>
+                            <img src="./assets/icons/icon-error.svg" alt="error-icon" />
                         </div>
                         <div class="form-control">
-                            <input id="subject"  name="subject" type="text" placeholder="Subject" required>
+                            <input id="subject"  name="subject" type="text" placeholder="Subject" >
                             <small>error message</small>
+                            <img src="./assets/icons/icon-error.svg" alt="error-icon" />
                         </div>
                         <div class="form-control">
-                            <textarea id="message"  name="message" type="textarea" placeholder="Message" required></textarea>
+                            <textarea id="message"  name="message" type="textarea" placeholder="Message"></textarea>
                             <small>error message</small>
+                            <img src="./assets/icons/icon-error.svg" alt="error-icon" />
                         </div>
                         <button type="submit" >SEND</button>
                     </div>

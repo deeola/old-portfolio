@@ -516,30 +516,73 @@ main .contactme .contact-container form .form-container .form-control {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
+  margin-bottom: 15px;
 }
 
 main .contactme .contact-container form .form-container .form-control input {
+  display: block;
   width: 100%;
   height: 40px;
   padding: 10px;
-  border-radius: 2px;
+  font-weight: 600;
+  border-radius: 5px;
   outline: none;
   border: 1px solid #838383;
-  margin-bottom: 10px;
+  font-size: 0.7rem;
 }
 
 main .contactme .contact-container form .form-container .form-control small {
-  margin: 5px 0px 10px 0px;
-  color: #df4343;
+  right: 0px;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+main .contactme .contact-container form .form-container .form-control img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
   display: none;
 }
 
 main .contactme .contact-container form .form-container .form-control textarea {
+  display: block;
   width: 100%;
   height: 80px;
-  border: 1px solid #838383;
   padding: 10px;
+  font-weight: 600;
+  border-radius: 5px;
   outline: none;
+  border: 1px solid #838383;
+  font-size: 0.7rem;
+}
+
+main .contactme .contact-container form .form-container .form-control.error input, main .contactme .contact-container form .form-container .form-control.error textarea {
+  border: 1px solid #b11f1f;
+}
+
+main .contactme .contact-container form .form-container .form-control.error img {
+  display: block;
+}
+
+main .contactme .contact-container form .form-container .form-control.error small {
+  display: block;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 10px;
+  color: #b11f1f;
+}
+
+main .contactme .contact-container form .form-container .form-control.success input, main .contactme .contact-container form .form-container .form-control.success textarea {
+  border: 1px solid green;
 }
 
 main .contactme .contact-container form .form-container button {
