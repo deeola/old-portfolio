@@ -104,7 +104,7 @@ const language = {
         'aboutFirstPara' : "My name is Adeola Bamigboye, and I'm a passionate frontend web developer using web technologies to build amazing products and focusing on solving problems and for different niches and industries using the power of technology. I try to better myself everytime and contribute to open source.",
         'aboutHello' : 'Hello,',
         'aboutSecondPara' : 'I would love to hear from you.Please feel free to contact me for projects, job opportunities or even collaborations.',
-        'openSourceLink' : 'Here is the link to some open sourceprojects that i have contributed to.',
+        'openSourceLink' : 'Here is the link to some open source projects that i have contributed to.',
 
         //CONTACT
 
