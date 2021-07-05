@@ -89,7 +89,13 @@ const language = {
         'projectSection' : 'projects',
         'projectSubheading' : 'Here are some of my projects, all responsive.',
         'audioLive' : 'Live Site',
-        'audioRepo' : 'View Repo'
+        'audioRepo' : 'View Repo',
+        'audioFirstPara' : 'Audiophile is an e-commerce website. It is a frontend mentor guru challenge.  Users are able to add/remove items from cart, edit product quantities in cart, receive form validations if fields are missed or incorrect during checkout and receive an order confirmation modal after checking out with an order summary.',
+        'audioSecondPara' : 'Made using REACT, REACT Hooks and styled using SASS.For state management, useContext API was used and data was fetched from a json file.',
+        'archFirstPara' : "Archstudio is a multi-page website i created. Users are able to view  optimal layout for each page depending on their device's screen sizes and also view actual locations on the contact page map.",
+        'archSecondPara' : 'I created this site with  REACT, SASS and the state was managed with useContext API and Google Map API.',
+        'heritageFirstPara' : 'This is a cultural heritage website i created to help people learn more about their unesco heritage sites around the world.Users can save some of these sites to their visit list or bucketlist. ',
+        'heritageSecondPara' : 'Made using REACT, SASS and GSAP. useContext API was used  for the state management, data was fetched from a json file and Google maps API was used to display geolocations in sites section. Graphics and layout designs was  created using figma.'
     },
     de:{
         'home' : 'Startseite',
@@ -113,7 +119,14 @@ const language = {
         'projectSection' : 'PROJEKTE',
         'projectSubheading' : 'Hier sind einige meiner Projekte, die alle ansprechbar sind.',
         'audioLive' : 'Live-Seite',
-        'audioRepo' : 'Ansicht Repo'
+        'audioRepo' : 'Ansicht Repo',
+        'audioFirstPara' : 'Audiophile ist eine E-Commerce-Website. Es ist eine Frontend-Mentor guru Herausforderung.  Benutzer können Artikel aus dem Warenkorb hinzufügen/entfernen Warenkorb hinzufügen/entfernen, Produktmengen im Warenkorb bearbeiten, Formularvalidierungen erhalten Formularvalidierungen erhalten, wenn Felder während des Checkouts fehlen oder falsch sind, und ein Bestätigungsmodal mit einer Zusammenfassung der Bestellung.',
+        'audioSecondPara' : 'Hergestellt mit REACT, REACT Hooks und gestylt mit SASS.Für das State Verwaltung wurde die useContext API verwendet und die Daten wurden aus einer json Datei geholt.',
+        'archFirstPara' : 'Archstudio ist eine mehrseitige Website, die ich erstellt habe. Die Benutzer können das optimale Layout für jede Seite abhängig von der Bildschirmgröße ihres Geräts anzeigen und auch die aktuellen Standorte auf der Karte der Kontaktseite sehen. ',
+        'archSecondPara' : 'Ich habe diese Seite mit REACT, SASS erstellt und der Zustand wurde mit useContext API und Google Map API verwaltet.',
+        'heritageFirstPara' : 'Dies ist eine Website für kulturelles Erbe, die ich erstellt habe, um Menschen zu helfen, mehr über ihre Unesco-Kulturerbestätten auf der ganzen Welt zu erfahren.Benutzer können einige dieser Stätten auf ihrer Besuchsliste oder Bucketlist speichern. ',
+        'heritageSecondPara' : 'Erstellt mit REACT, SASS und GSAP. useContext API wurde für die Zustandsverwaltung verwendet, Daten wurden aus einer json-Datei geholt und Google Maps API wurde verwendet, um Geolocations im Bereich Sites anzuzeigen. Grafiken und Layout-Designs wurden mit figma erstellt.'
+    
         
     }
 }
@@ -143,8 +156,24 @@ if(window.location.hash){
 
         //AUDIOPHILE
 
-        audioLive.textContent = language.de.audioLive;
-        audioRepo.textContent = language.de.audioRepo;
+        audioFirstPara.textContent = language.de.audioFirstPara;
+        audioSecondPara.textContent = language.de.audioSecondPara;
+
+        //ARCHSTUDIO
+
+        archFirstPara.textContent = language.de.archFirstPara;
+        archSecondPara.textContent = language.de.archSecondPara;
+
+        //Heritage
+        heritageFirstPara.textContent = language.de.heritageFirstPara;
+        heritageSecondPara.textContent = language.de.heritageSecondPara;
+
+        //SUNNYSIDE
+
+        
+
+
+
 
         
 
