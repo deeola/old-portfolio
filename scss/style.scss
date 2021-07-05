@@ -443,6 +443,11 @@ main {
             margin: 20px 0px;
             color: $orange-color;
             text-decoration: none;
+            transition: 200ms ease-in;
+
+            &:hover{
+              color: white;
+            }
         }
       }
 

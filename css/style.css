@@ -450,6 +450,11 @@ main .aboutme .about-container .about-text-container .opensourceLink {
   margin: 20px 0px;
   color: #f58f29;
   text-decoration: none;
+  transition: 200ms ease-in;
+}
+
+main .aboutme .about-container .about-text-container .opensourceLink:hover {
+  color: white;
 }
 
 main .aboutme .about-container .skillset-section h4 {

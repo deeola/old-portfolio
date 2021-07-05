@@ -112,7 +112,10 @@ const language = {
         'contactQuestion' : 'Do you have any question or message for me?',
         'submit' : 'SEND',
         'phoneNumber' : 'PHONE-NUMBER',
-        'socially' : "LET'S CONNECT SOCIALLY"
+        'socially' : "LET'S CONNECT SOCIALLY",
+
+        //FOOTER
+        'crafted' : 'crafted and developed by Adeola.'
 
 
     },
@@ -161,7 +164,9 @@ const language = {
          'contactQuestion' : 'Haben Sie eine Frage oder Nachricht für mich?',
          'submit' :'SENDEN',
          'phoneNumber' : 'TELEFONNUMMER',
-         'socially' : "LASSEN SIE UNS SOZIAL VERNETZEN"
+         'socially' : "LASSEN SIE UNS SOZIAL VERNETZEN",
+          //FOOTER
+        'crafted' : 'hergestellt und entwickelt von Adeola.'
         
     }
 }
@@ -224,6 +229,16 @@ if(window.location.hash){
         submit.textContent = language.de.submit;
         phoneNumber.textContent = language.de.phoneNumber;
         socially.textContent = language.de.socially;
+
+
+        //FOOTER
+
+        footerHome.textContent = language.de.home;
+        footerAbout.textContent = language.de.about;
+        footerProject.textContent = language.de.project;
+        footerContact.textContent = language.de.contact;
+        footerResume.textContent = language.de.downloadResume;
+        crafted.textContent = language.de.crafted;
 
 
         
