@@ -95,7 +95,9 @@ const language = {
         'archFirstPara' : "Archstudio is a multi-page website i created. Users are able to view  optimal layout for each page depending on their device's screen sizes and also view actual locations on the contact page map.",
         'archSecondPara' : 'I created this site with  REACT, SASS and the state was managed with useContext API and Google Map API.',
         'heritageFirstPara' : 'This is a cultural heritage website i created to help people learn more about their unesco heritage sites around the world.Users can save some of these sites to their visit list or bucketlist. ',
-        'heritageSecondPara' : 'Made using REACT, SASS and GSAP. useContext API was used  for the state management, data was fetched from a json file and Google maps API was used to display geolocations in sites section. Graphics and layout designs was  created using figma.'
+        'heritageSecondPara' : 'Made using REACT, SASS and GSAP. useContext API was used  for the state management, data was fetched from a json file and Google maps API was used to display geolocations in sites section. Graphics and layout designs was  created using figma.',
+        'sunnyFirstPara' : 'This web application looks like your basic html,css and Javascript website but it is more than that. It is a Progressive Web Application(PWA) where users have the option to deustch and english language.Users are able to view and use this website even without internet connection. They  can also download this app and add to their android home screen on mobile and desktop.',
+        'sunnySecondPara' : 'It was made with HTML, CSS and Vanilla Javascript(ES6). Animations on this site were made with GSAP(including the smoothscroll plugin).'
     },
     de:{
         'home' : 'Startseite',
@@ -125,7 +127,9 @@ const language = {
         'archFirstPara' : 'Archstudio ist eine mehrseitige Website, die ich erstellt habe. Die Benutzer können das optimale Layout für jede Seite abhängig von der Bildschirmgröße ihres Geräts anzeigen und auch die aktuellen Standorte auf der Karte der Kontaktseite sehen. ',
         'archSecondPara' : 'Ich habe diese Seite mit REACT, SASS erstellt und der Zustand wurde mit useContext API und Google Map API verwaltet.',
         'heritageFirstPara' : 'Dies ist eine Website für kulturelles Erbe, die ich erstellt habe, um Menschen zu helfen, mehr über ihre Unesco-Kulturerbestätten auf der ganzen Welt zu erfahren.Benutzer können einige dieser Stätten auf ihrer Besuchsliste oder Bucketlist speichern. ',
-        'heritageSecondPara' : 'Erstellt mit REACT, SASS und GSAP. useContext API wurde für die Zustandsverwaltung verwendet, Daten wurden aus einer json-Datei geholt und Google Maps API wurde verwendet, um Geolocations im Bereich Sites anzuzeigen. Grafiken und Layout-Designs wurden mit figma erstellt.'
+        'heritageSecondPara' : 'Erstellt mit REACT, SASS und GSAP. useContext API wurde für die Zustandsverwaltung verwendet, Daten wurden aus einer json-Datei geholt und Google Maps API wurde verwendet, um Geolocations im Bereich Sites anzuzeigen. Grafiken und Layout-Designs wurden mit figma erstellt.',
+        'sunnyFirstPara' : 'Diese Webanwendung sieht aus wie eine einfache HTML-, CSS- und Javascript-Website, aber sie ist mehr als das. Es handelt sich um eine progressive Webanwendung (PWA), bei der die Benutzer die Möglichkeit haben, zwischen deutscher und englischer Sprache zu wählen, so dass sie diese Website auch ohne Internetverbindung anzeigen und nutzen können. Sie können auch diese App herunterladen und zu ihrem Android-Startbildschirm auf dem Handy und Desktop hinzufügen.',
+        'sunnySecondPara' : 'Sie wurde mit HTML, CSS und Vanilla Javascript(ES6) erstellt. Die Animationen auf dieser Seite wurden mit GSAP(einschließlich dem Smoothscroll-Plugin) erstellt.'
     
         
     }
@@ -169,6 +173,8 @@ if(window.location.hash){
         heritageSecondPara.textContent = language.de.heritageSecondPara;
 
         //SUNNYSIDE
+        sunnyFirstPara.textContent = language.de.sunnyFirstPara;
+        sunnySecondPara.textContent = language.de.sunnySecondPara;
 
         
 
