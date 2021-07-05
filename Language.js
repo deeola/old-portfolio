@@ -30,7 +30,8 @@ if(window.location.hash === '#de' && window.innerWidth >= 768){
     btnContainer.style.width = '458px'
     recentDownload.style.width = '48%';
     recentDownloadSecond.style.width = '48%';
-    scrollicon.style.marginLeft = '60px'
+    scrollicon.style.marginLeft = '60px';
+    
     
 
     
@@ -80,7 +81,15 @@ const language = {
         'heroSubtitle' : 'A frontend web developer',
         'recentProjects' : 'RECENT PROJECTS',
         'downloadResume' : 'DOWNLOAD RESUME',
-        'scrolls' : 'scroll down'
+        'scrolls' : 'scroll down',
+
+
+        //PROJECT
+
+        'projectSection' : 'projects',
+        'projectSubheading' : 'Here are some of my projects, all responsive.',
+        'audioLive' : 'Live Site',
+        'audioRepo' : 'View Repo'
     },
     de:{
         'home' : 'Startseite',
@@ -97,7 +106,14 @@ const language = {
         'heroSubtitle' : 'Ein Frontend-Webentwickler',
         'recentProjects' : 'NEUESTE PROJEKTE',
         'downloadResume' : 'DOWNLOAD LEBENSLAUF',
-        'scrolls' : 'nach unten scrollen'
+        'scrolls' : 'nach unten scrollen',
+
+        //PROJECTS
+
+        'projectSection' : 'PROJEKTE',
+        'projectSubheading' : 'Hier sind einige meiner Projekte, die alle ansprechbar sind.',
+        'audioLive' : 'Live-Seite',
+        'audioRepo' : 'Ansicht Repo'
         
     }
 }
@@ -119,6 +135,19 @@ if(window.location.hash){
         recentProjects.textContent = language.de.recentProjects;
         downloadResume.textContent = language.de.downloadResume;
         scrolls.textContent = language.de.scrolls
+
+        //PROJECT SECTION
+
+        projectSection.textContent = language.de.projectSection;
+        projectSubheading.textContent = language.de.projectSubheading;
+
+        //AUDIOPHILE
+
+        audioLive.textContent = language.de.audioLive;
+        audioRepo.textContent = language.de.audioRepo;
+
+        
+
 
 
 
