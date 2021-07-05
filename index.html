@@ -210,20 +210,17 @@
         <!--About ME-->
         <section  class="aboutme" >
             <div class="Project-heading">
-                <h2>ABOUT</h2>
+                <h2 id="aboutTitle">ABOUT</h2>
             </div>
             <div id="aboutme" class="about-container">
                 <div class="about-text-container">
-                    <p class="about-hello">Hello,</p>
-                    <p class="about-upper-paragraph">
-                        My name is Adeola Bamigboye, and i'm a passionate frontend web developer 
-                        using web technologies to build amazing products and focusing on solving products
-                        and for different niches and industries using the power of technology.
+                    <p id="aboutHello" class="about-hello">Hello,</p>
+                    <p id="aboutFirstPara" class="about-upper-paragraph">
+                        My name is Adeola Bamigboye, and i'm a passionate frontend web developer using web technologies to build amazing products and focusing on solving products and for different niches and industries using the power of technology.I try to better myself everytime and contribute to open source.
                     </p>
-                    <p class="about-below-paragraph">
-                       I try to better myself everytime and contribute to open source.
-                        <a href="#" target="_blank">Here</a> is the link to some open source
-                         projects that i have contributed to.
+
+                    <a class="opensourceLink" id="openSourceLink" href="#" target="_blank">Here is the link to some open sourceprojects that i have contributed to.</a> 
+                    <p id="aboutSecondPara" class="about-below-paragraph">
                         I would love to hear from you.Please feel free to contact me for projects, 
                         job opportunities or even collaborations.
                     </p>
@@ -251,13 +248,13 @@
         <!--CONTACT-->
         <section id="contactme" class="contactme">
             <div class="Project-heading">
-                <h2>CONTACT</h2>
+                <h2 id="contactTitle">CONTACT</h2>
             </div>
             <div class="contact-container">
                 <form id="my-form" action="https://formspree.io/f/mjvjojgz" method="POST" novalidate>
                     <div class="form-top-div">
                         <div class="form-heading">
-                            <h5>Do you have any question or message for me?
+                            <h5 id="contactQuestion">Do you have any question or message for me?
                         </div>
                         <div id="success-message" class="success-message">
                             <p>Your message has been sent. I'll get back to you as soon as possible.
@@ -289,14 +286,14 @@
                             <small>error message</small>
                             <img src="./assets/icons/icon-error.svg" alt="error-icon" />
                         </div>
-                        <button type="submit" >SEND</button>
+                        <button id="submit" type="submit" >SEND</button>
                     </div>
                     
     
                 </form>
                 <div class="contact-details">
                     <div class=" phone contact-details-control">
-                        <p class="contact-type">PHONE-NUMBER</p>
+                        <p class="contact-type" id="phoneNumber">PHONE-NUMBER</p>
                         <p class="contact-main">+4915211541078</p>
                     </div>
                     <div class=" email contact-details-control">
@@ -304,7 +301,7 @@
                         <p class="contact-main">clazikar@gmail.com</p>
                     </div>
                     <div class="socials contact-details-control">
-                        <p class="social-type contact-type">Let's connect socially</p>
+                        <p class="social-type contact-type" id="socially">LET'S CONNECT SOCIALLY</p>
                         <div class="icons-contact">
                             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="https://github.com/deeola" target="_blank"><i class="fab fa-github"></i></a>

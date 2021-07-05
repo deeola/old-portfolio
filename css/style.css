@@ -446,8 +446,8 @@ main .aboutme .about-container .about-text-container .about-below-paragraph {
   margin: 20px 0px;
 }
 
-main .aboutme .about-container .about-text-container .about-below-paragraph a {
-  text-transform: uppercase;
+main .aboutme .about-container .about-text-container .opensourceLink {
+  margin: 20px 0px;
   color: #f58f29;
   text-decoration: none;
 }

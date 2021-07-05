@@ -431,11 +431,18 @@ main {
         .about-below-paragraph {
           margin: 20px 0px;
 
-          a {
-            text-transform: uppercase;
+          // a {
+          //   text-transform: uppercase;
+          //   color: $orange-color;
+          //   text-decoration: none;
+          // }
+        }
+
+        .opensourceLink{
+          // text-transform: uppercase;
+            margin: 20px 0px;
             color: $orange-color;
             text-decoration: none;
-          }
         }
       }
 

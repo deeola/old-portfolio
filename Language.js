@@ -97,7 +97,24 @@ const language = {
         'heritageFirstPara' : 'This is a cultural heritage website i created to help people learn more about their unesco heritage sites around the world.Users can save some of these sites to their visit list or bucketlist. ',
         'heritageSecondPara' : 'Made using REACT, SASS and GSAP. useContext API was used  for the state management, data was fetched from a json file and Google maps API was used to display geolocations in sites section. Graphics and layout designs was  created using figma.',
         'sunnyFirstPara' : 'This web application looks like your basic html,css and Javascript website but it is more than that. It is a Progressive Web Application(PWA) where users have the option to deustch and english language.Users are able to view and use this website even without internet connection. They  can also download this app and add to their android home screen on mobile and desktop.',
-        'sunnySecondPara' : 'It was made with HTML, CSS and Vanilla Javascript(ES6). Animations on this site were made with GSAP(including the smoothscroll plugin).'
+        'sunnySecondPara' : 'It was made with HTML, CSS and Vanilla Javascript(ES6). Animations on this site were made with GSAP(including the smoothscroll plugin).',
+
+        //ABOUT
+        'aboutTitle' : 'About',
+        'aboutFirstPara' : "My name is Adeola Bamigboye, and I'm a passionate frontend web developer using web technologies to build amazing products and focusing on solving problems and for different niches and industries using the power of technology. I try to better myself everytime and contribute to open source.",
+        'aboutHello' : 'Hello,',
+        'aboutSecondPara' : 'I would love to hear from you.Please feel free to contact me for projects, job opportunities or even collaborations.',
+        'openSourceLink' : 'Here is the link to some open sourceprojects that i have contributed to.',
+
+        //CONTACT
+
+        'contactTitle' : 'CONTACT',
+        'contactQuestion' : 'Do you have any question or message for me?',
+        'submit' : 'SEND',
+        'phoneNumber' : 'PHONE-NUMBER',
+        'socially' : "LET'S CONNECT SOCIALLY"
+
+
     },
     de:{
         'home' : 'Startseite',
@@ -129,8 +146,22 @@ const language = {
         'heritageFirstPara' : 'Dies ist eine Website für kulturelles Erbe, die ich erstellt habe, um Menschen zu helfen, mehr über ihre Unesco-Kulturerbestätten auf der ganzen Welt zu erfahren.Benutzer können einige dieser Stätten auf ihrer Besuchsliste oder Bucketlist speichern. ',
         'heritageSecondPara' : 'Erstellt mit REACT, SASS und GSAP. useContext API wurde für die Zustandsverwaltung verwendet, Daten wurden aus einer json-Datei geholt und Google Maps API wurde verwendet, um Geolocations im Bereich Sites anzuzeigen. Grafiken und Layout-Designs wurden mit figma erstellt.',
         'sunnyFirstPara' : 'Diese Webanwendung sieht aus wie eine einfache HTML-, CSS- und Javascript-Website, aber sie ist mehr als das. Es handelt sich um eine progressive Webanwendung (PWA), bei der die Benutzer die Möglichkeit haben, zwischen deutscher und englischer Sprache zu wählen, so dass sie diese Website auch ohne Internetverbindung anzeigen und nutzen können. Sie können auch diese App herunterladen und zu ihrem Android-Startbildschirm auf dem Handy und Desktop hinzufügen.',
-        'sunnySecondPara' : 'Sie wurde mit HTML, CSS und Vanilla Javascript(ES6) erstellt. Die Animationen auf dieser Seite wurden mit GSAP(einschließlich dem Smoothscroll-Plugin) erstellt.'
-    
+        'sunnySecondPara' : 'Sie wurde mit HTML, CSS und Vanilla Javascript(ES6) erstellt. Die Animationen auf dieser Seite wurden mit GSAP(einschließlich dem Smoothscroll-Plugin) erstellt.',
+
+        //ABOUT
+        'aboutTitle' : 'ÜBER',
+        'aboutHello' : 'Hallo,',
+        'openSourceLink' : 'Hier ist der Link zu einigen Open-Source-Projekten, zu denen ich beigetragen habe.',
+        'aboutFirstPara' : 'Mein Name ist Adeola Bamigboye und ich bin ein leidenschaftlicher Frontend-Webentwickler, der Webtechnologien verwendet, um erstaunliche Produkte zu bauen und sich darauf konzentriert, Probleme zu lösen und für verschiedene Nischen und Branchen die Macht der Technologie zu nutzen. Ich versuche, mich jedes Mal zu verbessern und zu Open Source beizutragen.',
+        'aboutSecondPara' : 'Ich würde mich freuen, von Ihnen zu hören. Sie können mich gerne für Projekte, Arbeitsmöglichkeiten oder sogar Kooperationen kontaktieren.',
+
+         //CONTACT
+
+         'contactTitle' : 'KONTAKT',
+         'contactQuestion' : 'Haben Sie eine Frage oder Nachricht für mich?',
+         'submit' :'SENDEN',
+         'phoneNumber' : 'TELEFONNUMMER',
+         'socially' : "LASSEN SIE UNS SOZIAL VERNETZEN"
         
     }
 }
@@ -175,6 +206,27 @@ if(window.location.hash){
         //SUNNYSIDE
         sunnyFirstPara.textContent = language.de.sunnyFirstPara;
         sunnySecondPara.textContent = language.de.sunnySecondPara;
+
+
+        //ABOUT SESSION
+
+        aboutTitle.textContent = language.de.aboutTitle;
+        aboutFirstPara.textContent = language.de.aboutFirstPara;
+        aboutHello.textContent = language.de.aboutHello;
+        aboutSecondPara.textContent = language.de.aboutSecondPara;
+        openSourceLink.textContent = language.de.openSourceLink;
+
+
+        //Contact SESSION
+
+        contactTitle.textContent = language.de.contactTitle;
+        contactQuestion.textContent = language.de.contactQuestion;
+        submit.textContent = language.de.submit;
+        phoneNumber.textContent = language.de.phoneNumber;
+        socially.textContent = language.de.socially;
+
+
+        
 
         
 
