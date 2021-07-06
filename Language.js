@@ -95,8 +95,8 @@ const language = {
         'archFirstPara' : "Archstudio is a multi-page website I created. Users are able to view  optimal layout for each page depending on their device's screen sizes and also view actual locations on the contact page map.",
         'archSecondPara' : 'I created this site with  REACT, SASS and the state was managed with useContext API and Google Map API.',
         'heritageFirstPara' : 'This is a cultural heritage website I created to help people learn more about their UNESCO heritage sites around the world.Users can save some of these sites to their visit list or bucketlist. ',
-        'heritageSecondPara' : 'Made using REACT, SASS and GSAP. useContext API was used  for the state management, data was fetched from a json file and Google maps API was used to display geolocations in sites section. Graphics and layout designs was  created using figma.',
-        'sunnyFirstPara' : 'This web application looks like your basic html,css and Javascript website but it is more than that. It is a Progressive Web Application(PWA) where users have the option to deustch and english language.Users are able to view and use this website even without internet connection. They  can also download this app and add to their android home screen on mobile and desktop.',
+        'heritageSecondPara' : 'Made using REACT, SASS and GSAP. useContext API was used  for the state management, data was fetched from a json file and Google maps API was used to display geolocations in sites section. Graphics and layout designs were  created using figma.',
+        'sunnyFirstPara' : 'This web application looks like your basic html,css and Javascript website but it is more than that. It is a Progressive Web Application(PWA) where users have the option to Deustch and English language.Users are able to view and use this website even without internet connection. They  can also download this app and add to their android home screen on mobile and desktop.',
         'sunnySecondPara' : 'It was made with HTML, CSS and Vanilla Javascript(ES6). Animations on this site were made with GSAP(including the smoothscroll plugin).',
 
         //ABOUT
