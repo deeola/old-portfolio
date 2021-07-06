@@ -175,6 +175,8 @@ header .hero .hero-container .hero-top .hero-button-container .recent-download a
   text-transform: capitalize;
   text-decoration: none;
   font-size: 14px;
+  width: 200px;
+  text-align: center;
 }
 
 header .hero .hero-container .hero-top .hero-button-container .recent-download:hover {
