@@ -8,7 +8,7 @@
     <link rel="icon" href="./assets/logo.svg">
     <meta name="Adeola" content="Adeola Bamigboye">
     <meta name="portfolio" content="personal web portfolio">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./scss/style.css">
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/2736c38521.js" crossorigin="anonymous"></script>
 </head>
@@ -52,7 +52,7 @@
                             <a id="recentProjects" href="#projects">RECENT PROJECTS</a> 
                          </div>
                          <div id="recentDownloadSecond" class="recent-download">
-                            <a id="downloadResume" href="./assets/resume.pdf" target="_blank">DOWNLOAD RESUME</a> 
+                            <a id="downloadResume" href="./assets/newresume.pdf" target="_blank">DOWNLOAD RESUME</a> 
                          </div>
 
                     </div>
@@ -77,7 +77,7 @@
                         </div>
                         <div class="lang-menu">
                             <div class="selected-lang" >
-                              <img id="flagimage" class="currentflag" src="https://www.countryflags.io/us/flat/32.png" alt="flag">
+                              <img id="flagimage" class="currentflag" src="https://img.icons8.com/doodle/48/000000/usa.png" alt="flag">
                               <p id="selectedlang" class="selectedlang" >English</p>
                             </div>
                             <ul>
@@ -106,25 +106,26 @@
                     <div class="desktop project-link-desktop">
                         <a id="audioRepo" href="https://github.com/deeola/audiophile.git" target="_blank">View Repo</a>
                         <a id="audioLive" href="https://audiophile1818.netlify.app/" target="_blank">Live Site</a>
+                        <a href="https://62938a134cd7e7004a17ef2d-frsvgcacxz.chromatic.com/" target="_blank">Storybook Link</a>
                     </div>
                 </div>
                 <div class="project-text-section">
                     <h3>Audiophile</h3>
-                    <p id="audioFirstPara">Audiophile is an e-commerce website. It is a frontend mentor
-                        guru challenge.  Users are able to add/remove items from 
-                        cart, edit product quantities in cart, receive form validations 
+                    <p id="audioFirstPara">Audiophile is an e-commerce website built using 
+                        React and Typescript. Users are able to add/remove items from 
+                        cart, edit product quantities in cart and also receive form validations. 
                         if fields are missed or incorrect during checkout and receive an order
-                        confirmation modal after checking out with an order summary.                        
+                        confirmation modal after checking out with an order summary.                   
                     </p>
                     <p id="audioSecondPara" class="project-second-para">
-                        Made using REACT, REACT Hooks and styled using SASS.For state
-                        management, useContext API was used and data was fetched from a json 
-                        file.
+                        Over 100 Unit and Integration tests with Jest and React Testing Library and design 
+                        system documenented with Storybook. States were managed by useContext Api.
                     </p>
                 </div>
                 <div class="mobile project-link-mobile">
                     <a href="https://github.com/deeola/audiophile.git" target="_blank">View Repo</a>
                     <a href="https://audiophile1818.netlify.app/" target="_blank">Live Site</a>
+                    <a href="https://62938a134cd7e7004a17ef2d-frsvgcacxz.chromatic.com/" target="_blank">Storybook Link</a>
                 </div>
 
 
@@ -227,19 +228,39 @@
     
                 </div>
                 <div class="skillset-section">
-                    <h4 class="skill-heading">SKILLS</h4>
-                    <div class="skill-grid-container">
-                        <div class="skill">Javascript/ES6</div>
-                        <div class="skill">HTML</div>
-                        <div class="skill">CSS</div>
-                        <div class="skill">REACT</div>
-                        <div class="skill">SASS</div>
-                        <div class="skill">GSAP</div>
-                        <div class="skill">PWA</div>
-                        <div class="skill">GIT/GITHUB</div>
-                        <div class="skill">FIGMA</div>
-                        <!-- <div class="skill">NPM</div> -->
+                    <div class="skillset-section-container">
+                        <h4 class="skill-heading">Languages and Frameworks</h4>
+                        <div class="skill-grid-container">
+                            <p  class="skill">HTML</p>
+                            <p class="skill">CSS</p>
+                            <p class="skill">Javascript</p>
+                            <p class="skill">React</p>
+                            <p class="skill">Typescript</p>
+                            <p class="skill">Storybook</p>
+                            <p class="skill">S.Components</p>
+                            <p class="skill">Scss</p>
+                            <p  class="skill">Python</p>
+                            <p class="skill">Gsap</p>
+                 
+                        </div>
                     </div>
+                    <div>
+                        <h4 class="skill-heading">Managament and Deployment Tools</h4>
+                        <div class="skill-grid-container">
+                            <p class="skill">Git</p>
+                            <p class="skill">Github</p>
+                            <p class="skill">Gitlab</p>
+                            <p class="skill">Netlify</p>
+                            <p class="skill">Heroku</p>
+                            <p class="skill">Chromatic</p>
+                            <p class="skill">Figma</p>
+                            <p class="skill">Jira</p>
+                            <p class="skill">Confluence</p>
+
+                        </div>
+
+                    </div>
+                   
                 </div>
             </div>
             
@@ -333,7 +354,7 @@
             </nav>
             <div class="download-crafted">
                 <div class="recent-download">
-                    <a id="footerResume" href="./assets/resume.pdf" target="_blank">DOWNLOAD RESUME</a> 
+                    <a id="footerResume" href="./assets/newresume.pdf" target="_blank">DOWNLOAD RESUME</a> 
                  </div>
                  <p id="crafted">crafted and developed by Adeola.</p>
             </div>

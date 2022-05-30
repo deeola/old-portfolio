@@ -143,7 +143,7 @@ const language = {
         'audioLive' : 'Live-Seite',
         'audioRepo' : 'Ansicht Repo',
         'audioFirstPara' : 'Audiophile ist eine E-Commerce-Website. Es ist eine Frontend-Mentor guru Herausforderung.  Benutzer können Artikel aus dem Warenkorb hinzufügen/entfernen Warenkorb hinzufügen/entfernen, Produktmengen im Warenkorb bearbeiten, Formularvalidierungen erhalten Formularvalidierungen erhalten, wenn Felder während des Checkouts fehlen oder falsch sind, und ein Bestätigungsmodal mit einer Zusammenfassung der Bestellung.',
-        'audioSecondPara' : 'Hergestellt mit REACT, REACT Hooks und gestylt mit SASS.Für das State Verwaltung wurde die useContext API verwendet und die Daten wurden aus einer json Datei geholt.',
+        'audioSecondPara' : ' Über 100 Unit- und Integrationstests mit Jest und React Testing Library und Designsystem mit Storybook dokumentiert. Zustände wurden mit useContext Api verwaltet.',
         'archFirstPara' : 'Archstudio ist eine mehrseitige Website, die ich erstellt habe. Die Benutzer können das optimale Layout für jede Seite abhängig von der Bildschirmgröße ihres Geräts anzeigen und auch die aktuellen Standorte auf der Karte der Kontaktseite sehen. ',
         'archSecondPara' : 'Ich habe diese Seite mit REACT, SASS erstellt und der Zustand wurde mit useContext API und Google Map API verwaltet.',
         'heritageFirstPara' : 'Dies ist eine Website für kulturelles Erbe, die ich erstellt habe, um Menschen zu helfen, mehr über ihre UNESCO-Kulturerbestätten auf der ganzen Welt zu erfahren.Benutzer können einige dieser Stätten auf ihrer Besuchsliste oder Bucketlist speichern. ',
@@ -259,7 +259,7 @@ if(window.location.hash){
         selectedlang.textContent = 'Deutsch';
 
         //flag change
-        flagimage.src = 'https://www.countryflags.io/de/flat/32.png'
+        flagimage.src = 'https://img.icons8.com/doodle/48/000000/germany.png'
 
     }
 

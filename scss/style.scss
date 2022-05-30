@@ -454,13 +454,19 @@ main {
       }
 
       .skillset-section {
+
+        .skillset-section-container{
+          margin-bottom: 20px;
+        }
+        
         h4 {
           margin: auto auto 15px auto;
           padding: 10px;
           background-color: rgba(255, 255, 255, 0.486);
           color: $black;
-          width: 120px;
+          width: 60%;
           text-align: center;
+          font-size: 12px;
         }
 
         .skill-grid-container {

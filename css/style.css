@@ -1160,13 +1160,13 @@ footer .footer-container .download-crafted p {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    width: 50%;
+    width: 100%;
     margin: auto auto auto 0px;
     justify-content: space-between;
     margin-top: 20px;
   }
   main .projects .project-control .project-image-section .project-link-desktop a {
-    width: 48%;
+    width: 30%;
     text-align: center;
     margin: auto auto 10px auto;
     text-decoration: none;
